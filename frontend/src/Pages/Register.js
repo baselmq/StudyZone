@@ -1,9 +1,9 @@
 import React from 'react'
-import Register_input from '../Components/Register_input'
+import RegisterScreen from '../Components/RegisterScreen'
 const Register = () => {
   return (
    <>
-   <Register_input/>
+   <RegisterScreen/>
    </>
   )
 }

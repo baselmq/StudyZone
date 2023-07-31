@@ -3,7 +3,7 @@ import { FaBell ,FaCartPlus,FaHeart} from "react-icons/fa";
 import NavCategory from './navCategory';
 import { Link } from 'react-router-dom';
 function NavIcons() {
-  let username=sessionStorage.getItem("username");
+  let username=localStorage.getItem("username");
   return (
     <>
     <div className="navbar__text">
