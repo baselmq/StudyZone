@@ -1,9 +1,9 @@
 import React from 'react'
-import LoginInput from '../Components/LoginInput'
+import ForgetPasswordInput from '../Components/ForgetPasswordInput'
 const Login = () => {
   return (
     <div>
-      <LoginInput/>
+      <ForgetPasswordInput/>
     </div>
   )
 }

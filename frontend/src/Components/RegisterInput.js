@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 // I Changed Register_input to RegisterScreen
-const RegisterScreen = () => {
+const RegisterInput = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -137,4 +137,4 @@ const RegisterScreen = () => {
   );
 };
 
-export default RegisterScreen;
+export default RegisterInput;

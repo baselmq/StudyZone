@@ -12,6 +12,7 @@ import LandingPage from "./LandingPage";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Nav from "../Components/Nav";
 import Footer from "../Components/Footer";
+import ForgotPasswordScreen from "../Components/ForgetPasswordInput";
 
 const AppLayout = () => (
   <>
@@ -37,6 +38,8 @@ function App() {
 
           <Route path="/login" Component={Login}></Route>
           <Route path="/register" Component={Register}></Route>
+          <Route path="/forgotpassword" element={<ForgotPasswordScreen />} />
+
         </Routes>
 
         {/* <Footer /> */}
