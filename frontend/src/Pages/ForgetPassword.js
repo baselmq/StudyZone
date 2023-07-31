@@ -1,6 +1,6 @@
 import React from 'react'
 import ForgetPasswordInput from '../Components/ForgetPasswordInput'
-const Login = () => {
+const ForgetPassword = () => {
   return (
     <div>
       <ForgetPasswordInput/>
@@ -8,4 +8,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default ForgetPassword
