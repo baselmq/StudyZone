@@ -1,18 +1,13 @@
-import React, { useState } from 'react';
-import LoginIcons from './loginIcons';
-import { Link,  useNavigate } from 'react-router-dom';
-
-
-
-
-
+import React, { useState } from "react";
+import LoginIcons from "./loginIcons";
+import { Link, useNavigate } from "react-router-dom";
 
 const Register_input = () => {
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [repassword, setRepassword] = useState('');
-const [errorMessage,setErrorMessage] = useState("");
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [repassword, setRepassword] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
   const handleUsernameChange = (e) => {
     setUsername(e.target.value);
   };
@@ -38,98 +33,69 @@ const [errorMessage,setErrorMessage] = useState("");
     if (!username || !email || !password || !repassword) {
       // alert('Please fill in all fields');
       setErrorMessage("Please fill in all fields.");
-    }else{
+    } else {
       setErrorMessage("");
       if (password !== repassword) {
         // alert('Passwords do not match');
         setErrorMessage("Passwords do not match.");
-      }else{
+      } else {
         setErrorMessage("");
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
           // alert('Invalid email format');
           setErrorMessage("Invalid email format.");
-        }else{
-          setErrorMessage("")
-          let similerEmails=false;
+        } else {
+          setErrorMessage("");
+          let similerEmails = false;
           var users;
-          if (savedData!=null)
-          {users = JSON.parse(savedData);}
-          else{
-            users=[]
+          if (savedData != null) {
+            users = JSON.parse(savedData);
+          } else {
+            users = [];
           }
           for (var i = 0; i < users.length; i++) {
             if (users[i].email === email) {
-                similerEmails=true;
+              similerEmails = true;
             }
           }
           if (similerEmails) {
-            setErrorMessage("Email already taken.")
-          }else{
-            setErrorMessage("")
+            setErrorMessage("Email already taken.");
+          } else {
+            setErrorMessage("");
 
             var parsedData = JSON.parse(savedData);
-  
-  let user = [];
-  let userData = {};
-  let lastUserID=0;
-  user.push.apply(user, parsedData);
 
-if(user.length>0){
-  const lastObject = user[user.length - 1];
-   lastUserID = lastObject.userId;
-}
+            let user = [];
+            let userData = {};
+            let lastUserID = 0;
+            user.push.apply(user, parsedData);
 
-  let userId=lastUserID+1;
-  userData.email = email;
-  userData.username = username;
-  userData.password = password;
-  userData.userId = userId;
+            if (user.length > 0) {
+              const lastObject = user[user.length - 1];
+              lastUserID = lastObject.userId;
+            }
 
+            let userId = lastUserID + 1;
+            userData.email = email;
+            userData.username = username;
+            userData.password = password;
+            userData.userId = userId;
 
-  user.push(userData);
-  localStorage.setItem("userData", JSON.stringify(user));
+            user.push(userData);
+            localStorage.setItem("userData", JSON.stringify(user));
 
+            setUsername("");
+            setEmail("");
+            setPassword("");
+            setRepassword("");
 
-  setUsername('');
-  setEmail('');
-  setPassword('');
-  setRepassword('');
-
-  navigate('/');
-  sessionStorage.setItem("username", userData.username);
-  sessionStorage.setItem("login", true);
-
+            navigate("/");
+            sessionStorage.setItem("username", userData.username);
+            sessionStorage.setItem("login", true);
           }
         }
       }
-      
     }
-
-
-
-
-
-    
-
-   
-
-    
-
-
-
-
-    // const userData = {
-    //   username,
-    //   email,
-    //   password
-    // };
-    // localStorage.setItem('userData', JSON.stringify(userData));
-
-
-
-  
-
   };
 
   return (
@@ -139,6 +105,7 @@ if(user.length>0){
           <div className="input-groups_title">
             <h1>Sign up</h1>
           </div>
+          {/* username */}
           <div className="input-groups">
             <label htmlFor="username">Username</label>
             <input
@@ -151,7 +118,7 @@ if(user.length>0){
               onChange={handleUsernameChange}
             />
           </div>
-
+          {/* email */}
           <div className="input-groups">
             <label htmlFor="email">Email</label>
             <input
@@ -164,7 +131,7 @@ if(user.length>0){
               onChange={handleEmailChange}
             />
           </div>
-
+          {/* password */}
           <div className="input-groups">
             <label htmlFor="password">Password</label>
             <input
@@ -177,7 +144,7 @@ if(user.length>0){
               onChange={handlePasswordChange}
             />
           </div>
-
+          {/* Re-passowrd */}
           <div className="input-groups">
             <label htmlFor="Repassword">Re-Password</label>
             <input
@@ -190,21 +157,21 @@ if(user.length>0){
               onChange={handleRepasswordChange}
             />
           </div>
-          <h6 className='error__message mt-3 text-danger'>{errorMessage}</h6>
-
+          <h6 className="error__message mt-3 text-danger">{errorMessage}</h6>
+          {/* sign up button */}
           <div className="input-groups">
             <button className="btn-login m-auto" type="submit">
               Sign up
             </button>
           </div>
+          {/* shifting to login in if you have account */}
           <div className="checkbox signup-link">
             <p style={{ fontSize: 18 }}>
               Already have an account? <Link to="/login">Sign In</Link>
             </p>
           </div>
- 
-
         </div>
+        {/* sign up img */}
         <div className="registration_column_img"></div>
       </form>
     </div>
