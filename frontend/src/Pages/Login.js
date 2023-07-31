@@ -1,9 +1,9 @@
 import React from 'react'
-import Login_input from '../Components/login_input'
+import LoginScreen from '../Components/LoginScreen'
 const Login = () => {
   return (
     <div>
-      <Login_input/>
+      <LoginScreen/>
     </div>
   )
 }
