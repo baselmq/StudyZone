@@ -31,12 +31,12 @@ function App() {
   return (
     <>
      {/*Admin Dashboard*/}
-    {/* <PageLayout /> */}
+    <PageLayout />
 
     
       <BrowserRouter>
         <Routes>
-          <Route element={<AppLayout />}>
+          {/* <Route element={<AppLayout />}>
             <Route path="/" Component={LandingPage}></Route>
             <Route path="/courses" Component={Courses}></Route>
             <Route path="/category/:category" Component={Courses}></Route>
@@ -50,7 +50,7 @@ function App() {
           <Route
             path="/passwordreset/:resetToken"
             element={<ResetPasswordInput />}
-          />
+          /> */}
 
         </Routes>
 

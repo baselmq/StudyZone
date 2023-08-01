@@ -51,8 +51,7 @@ const Sidebar = () => {
             </li>
             <li>
               <a href="">
-                <span class="las la-sign-out-alt"></span>
-                <span>Logout</span>
+              <span class="las la-sign-out-alt"></span>                <span>Logout</span>
               </a>
             </li>
           </ul>
