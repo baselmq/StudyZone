@@ -1,82 +1,75 @@
-import React from 'react';
+import React from "react";
 
 const Sidebar = () => {
   return (
-<div class="sidebar">
+    <div class="sidebar">
       <div class="sidebar-container">
-            <div class="brand">
-              <h2>
-                  <span class="lab la-staylinked"></span>
-                 StudyZone
-              </h2>
+        <div class="brand">
+          <h2>
+            <span class="lab la-staylinked"></span>
+            StudyZone
+          </h2>
+        </div>
+        <div class="sidebar-avartar">
+          <div>
+            <img src="../Images/1.png"></img>
+          </div>
+          <div class="avartar-info">
+            <div class="avartar-text">
+              <h4>Saadeh</h4>
+              <small>1029-1021-1210</small>
             </div>
-            <div class="sidebar-avartar">
-              <div>
-              <img src='../Images/1.png'></img>
+            <span class="las la-angle-double-down"></span>
+          </div>
+        </div>
 
-              </div>
-              <div class="avartar-info">
-                <div class="avartar-text">
-                  <h4>Saadeh</h4>
-                  <small>1029-1021-1210</small>
-                </div>
-                <span class="las la-angle-double-down"></span>
-              </div>
-            </div>
+        <div class="sidebar-menu">
+          <ul>
+            <li>
+              <a href="" class="active">
+                <span class="las la-adjust"></span>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="las la-swatchbook"></span>
+                <span>Courses</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="las la-book-reader"></span>
+                <span>Lessons</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="las la-user-cog"></span>
+                <span>Users</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+              <span class="las la-sign-out-alt"></span>                <span>Logout</span>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-                <div class="sidebar-menu">
-                    <ul>
-                      <li>
-                        <a href=""  class="active">
-                            <span class="las la-adjust"></span>
-                            <span>Dashboard</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                            <span class="las la-video"></span>
-                            <span>Videos</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                            <span class="las la-chart-bar"></span>
-                            <span>Analytics</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                            <span class="las la-calendar"></span>
-                            <span>Schhedil</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                            <span class="las la-user"></span>
-                            <span>Account
+        <div class="sidebar-card">
+          <div class="side-card-icon">
+            <span class="lab la-codiepie"></span>
+          </div>
 
-                            </span>
-                        </a>
-                      </li>
-                    </ul>
-                </div>
-
-                <div class="sidebar-card">
-                  <div class="side-card-icon">
-                    <span class="lab la-codiepie">
-
-                    </span>
-                  </div>
-                
-                  <div>
-                    <h4>make ads</h4>
-                    <p>ADdd ads to you video </p>
-                  </div>
-                  <button class="btn btn-main btn-block"> create now</button>
-                </div>
-
-            </div>
+          <div>
+            <h4>make ads</h4>
+            <p>ADdd ads to you video </p>
+          </div>
+          <button class="btn btn-main btn-block"> create now</button>
+        </div>
       </div>
+    </div>
   );
 };
 
