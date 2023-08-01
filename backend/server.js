@@ -3,6 +3,9 @@ const express = require("express");
 const connectDB = require("./config/db");
 const errorHandler = require("./middleware/error");
 const auth = require("./routes/auth");
+const courseRoutes = require("./routes/courseRoutes");
+const userRoutes = require("./routes/userRoutes");
+
 // Connect DB
 
 connectDB();
@@ -13,6 +16,8 @@ app.use(express.json());
 
 app.use("/api/auth", auth);
 app.use("/api/private", require("./routes/private"));
+app.use("/api/admin/courses", courseRoutes);
+app.use("/api/admin/users", userRoutes);
 
 // Error Handler should be last piece of middleware
 
