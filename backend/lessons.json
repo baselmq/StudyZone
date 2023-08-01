@@ -1,0 +1,1122 @@
+[
+    {
+      "_id": {
+        "$oid": "64c8d944ce177e9671d231a4"
+      },
+      "course_id": "1001",
+      "lessons": [
+        {
+          "lesson_id": "2001",
+          "lesson_title": "How to make a website",
+          "duration": "5:23 min",
+          "video_url": "https://youtu.be/gQojMIhELvM"
+        },
+        {
+          "lesson_id": "2002",
+          "lesson_title": "HTML Tutorial for Beginners",
+          "duration": "11:58 min",
+          "video_url": "https://youtu.be/RjHflb-QgVc"
+        },
+        {
+          "lesson_id": "2003",
+          "lesson_title": "HTML CSS Tutorial for Beginners",
+          "duration": "7:03 min",
+          "video_url": "https://youtu.be/J35jug1uHzE"
+        },
+        {
+          "lesson_id": "2004",
+          "lesson_title": "How To Make A Website From HTML & CSS ",
+          "duration": "9:09 min",
+          "video_url": "https://youtu.be/5iUB31h2Hzs"
+        },
+        {
+          "lesson_id": "2005",
+          "lesson_title": "EASY! Hand-code an HTML + CSS layout",
+          "duration": "11:24 min",
+          "video_url": "https://youtu.be/dMK_3lH1YPo"
+        },
+        {
+          "lesson_id": "2006",
+          "lesson_title": "Build an HTML + CSS Layout with Flexbox in just a few lines of code",
+          "duration": "7:04 min",
+          "video_url": "https://youtu.be/aRMIdKRYg6c"
+        },
+        {
+          "lesson_id": "2007",
+          "lesson_title": "HTML CSS TUTORIAL FOR BEGINNERS - multiple pages",
+          "duration": "9:09 min",
+          "video_url": "https://youtu.be/iXSSHlOe47s"
+        },
+        {
+          "lesson_id": "2008",
+          "lesson_title": "CSS SELECTORS MADE EASY - HTML CSS Tutorial for Beginners",
+          "duration": "11:20 min",
+          "video_url": "https://youtu.be/dcCCOiQ1ZuM"
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "64c8d944ce177e9671d231a5"
+      },
+      "course_id": "1002",
+      "lessons": [
+        {
+          "lesson_id": "2001",
+          "lesson_title": "What is Data Science? ",
+          "duration": "6:47 min",
+          "video_url": "https://youtu.be/JL_grPUnXzY"
+        },
+        {
+          "lesson_id": "2002",
+          "lesson_title": "Learn data science for beginners",
+          "duration": "16:20 min",
+          "video_url": "https://youtu.be/Vn_mmOuQkSA"
+        },
+        {
+          "lesson_id": "2003",
+          "lesson_title": "Install python on windows",
+          "duration": "3:53 min",
+          "video_url": "https://youtu.be/6lBPM-MiGNI"
+        },
+        {
+          "lesson_id": "2004",
+          "lesson_title": "Variables in python",
+          "duration": "3:43 min",
+          "video_url": "https://youtu.be/8tCe1P_cgoY"
+        },
+        {
+          "lesson_id": "2005",
+          "lesson_title": "Numbers in python",
+          "duration": "8:45 min",
+          "video_url": "https://youtu.be/pd2_ZbhFT38"
+        },
+        {
+          "lesson_id": "2006",
+          "lesson_title": "Strings in python",
+          "duration": "7:12 min",
+          "video_url": "https://youtu.be/ez2N-hcwvcQ"
+        },
+        {
+          "lesson_id": "2007",
+          "lesson_title": "Lists in python",
+          "duration": "10:24 min",
+          "video_url": "https://youtu.be/t0UTQ1eOH_g"
+        },
+        {
+          "lesson_id": "2008",
+          "lesson_title": "Install PyCharm on Windows",
+          "duration": "6:33 min",
+          "video_url": "https://youtu.be/Vig1IeU2RYk"
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "64c8d944ce177e9671d231a6"
+      },
+      "course_id": "1003",
+      "lessons": [
+        {
+          "lesson_id": "2001",
+          "lesson_title": "Flutter Tutorial for Beginners",
+          "duration": "12:05 min",
+          "video_url": "https://youtu.be/1ukSR1GRtMU"
+        },
+        {
+          "lesson_id": "2002",
+          "lesson_title": "Flutter Overview",
+          "duration": "4:26 min",
+          "video_url": "https://youtu.be/bKueYVtV0eA"
+        },
+        {
+          "lesson_id": "2003",
+          "lesson_title": "Dart Primer",
+          "duration": "27:13 min",
+          "video_url": "https://youtu.be/FLQ-Vhw1NYQ"
+        },
+        {
+          "lesson_id": "2004",
+          "lesson_title": "Creating a Flutter App in Android Studio",
+          "duration": "13:47 min",
+          "video_url": "https://youtu.be/TSIhiZ5jRB0"
+        },
+        {
+          "lesson_id": "2005",
+          "lesson_title": "Scaffold & AppBar Widgets",
+          "duration": "8:47 min",
+          "video_url": "https://youtu.be/C5lpPjoivaw"
+        },
+        {
+          "lesson_id": "2006",
+          "lesson_title": "Colours & Fonts",
+          "duration": "10:43 min",
+          "video_url": "https://youtu.be/km2P_KQJyO0"
+        },
+        {
+          "lesson_id": "2007",
+          "lesson_title": "Stateless Widgets & Hot Reload",
+          "duration": "8:40 min",
+          "video_url": "https://youtu.be/zwPBMg3SHVU"
+        },
+        {
+          "lesson_id": "2008",
+          "lesson_title": "Images & Assets",
+          "duration": "6:53 min",
+          "video_url": "https://youtu.be/Hxh6nNHSUjo"
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "64c8d944ce177e9671d231a7"
+      },
+      "course_id": "1004",
+      "lessons": [
+        {
+          "lesson_id": "2001",
+          "lesson_title": "Python for Beginners",
+          "duration": "1:06 min",
+          "video_url": "https://youtu.be/QXeEoD0pB3E"
+        },
+        {
+          "lesson_id": "2002",
+          "lesson_title": "Introduction to Python",
+          "duration": "4:13 min",
+          "video_url": "https://youtu.be/hEgO047GxaQ"
+        },
+        {
+          "lesson_id": "2003",
+          "lesson_title": "Python Installation | PyCharm",
+          "duration": "8:33 min",
+          "video_url": "https://youtu.be/mbryl4MZJms"
+        },
+        {
+          "lesson_id": "2004",
+          "lesson_title": "Getting Started with Python",
+          "duration": "14:49 min",
+          "video_url": "https://youtu.be/DWgzHbglNIo"
+        },
+        {
+          "lesson_id": "2005",
+          "lesson_title": "Java and Spring Live Course Update: Microservices, Git, Docker and Cloud",
+          "duration": "2:28 min",
+          "video_url": "https://youtu.be/Z3UsF2Hurew"
+        },
+        {
+          "lesson_id": "2006",
+          "lesson_title": "Variables in Python",
+          "duration": "10:22 min",
+          "video_url": "https://youtu.be/TqPzwenhMj0"
+        },
+        {
+          "lesson_id": "2007",
+          "lesson_title": "",
+          "duration": "10:42 min",
+          "video_url": ""
+        },
+        {
+          "lesson_id": "2008",
+          "lesson_title": "List in Python",
+          "duration": "6:41 min",
+          "video_url": "https://youtu.be/Eaz5e6M8tL4"
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "64c8d944ce177e9671d231a8"
+      },
+      "course_id": "1005",
+      "lessons": [
+        {
+          "lesson_id": "2001",
+          "lesson_title": "Stages of UI Design",
+          "duration": "8:23 min",
+          "video_url": "https://youtu.be/_6Tl2_eM0DE"
+        },
+        {
+          "lesson_id": "2002",
+          "lesson_title": "Super Practical Guide to Color Theory, Color Models and Perfect Color Palettes",
+          "duration": "24:08 min",
+          "video_url": "https://youtu.be/GyVMoejbGFg"
+        },
+        {
+          "lesson_id": "2003",
+          "lesson_title": "Best Design Systems and How to Learn (and Steal) From Them",
+          "duration": "11:15 min",
+          "video_url": "https://youtu.be/BISC15OPeGA"
+        },
+        {
+          "lesson_id": "2004",
+          "lesson_title": "Drastically Improve Your UI Designs With This Simple Technique!",
+          "duration": "11:08 min",
+          "video_url": "https://youtu.be/IbXugAtEf2s"
+        },
+        {
+          "lesson_id": "2005",
+          "lesson_title": "Best Practices for Choosing Fonts and Font Pairing in UI and Web Design",
+          "duration": "8:01 min",
+          "video_url": "https://youtu.be/30IoKUGaPWQ"
+        },
+        {
+          "lesson_id": "2006",
+          "lesson_title": "UI Design | How to choose colors and color palettes",
+          "duration": "6:20 min",
+          "video_url": "https://youtu.be/wuZuvhF4u6U"
+        },
+        {
+          "lesson_id": "2007",
+          "lesson_title": "Choosing and Pairing Fonts: UI Design",
+          "duration": "3:37 min",
+          "video_url": "https://youtu.be/uWCWTq1cPW0"
+        },
+        {
+          "lesson_id": "2008",
+          "lesson_title": "UI/UX Design in Practice: Trendy Blobs and Organic Shapes",
+          "duration": "3:01 min",
+          "video_url": "https://youtu.be/SsJ1G-NS4pU"
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "64c8d944ce177e9671d231a9"
+      },
+      "course_id": "1006",
+      "lessons": [
+        {
+          "lesson_id": "2001",
+          "lesson_title": "Course Overview",
+          "duration": "3:23 min",
+          "video_url": "https://youtu.be/gQojMIhELvM"
+        },
+        {
+          "lesson_id": "2002",
+          "lesson_title": "Overview",
+          "duration": "2:35 min",
+          "video_url": "https://youtu.be/_BSlzCjlSMA"
+        },
+        {
+          "lesson_id": "2003",
+          "lesson_title": "Phases",
+          "duration": "3:17 min",
+          "video_url": "https://youtu.be/wliqkrYNIeU"
+        },
+        {
+          "lesson_id": "2004",
+          "lesson_title": "Information Gathering",
+          "duration": "12:37 min",
+          "video_url": "https://youtu.be/Y4VlVIyvOjA"
+        },
+        {
+          "lesson_id": "2005",
+          "lesson_title": "Email Header Analysis",
+          "duration": "3:58 min",
+          "video_url": "https://youtu.be/dlCe2Jlm0bQ"
+        },
+        {
+          "lesson_id": "2006",
+          "lesson_title": "Virtualization",
+          "duration": "2:33 min",
+          "video_url": "https://youtu.be/vcw9SJx_wQ8"
+        },
+        {
+          "lesson_id": "2007",
+          "lesson_title": "Kali Linux Setup",
+          "duration": "11:39 min",
+          "video_url": "https://youtu.be/9ay_0dH5ZyA"
+        },
+        {
+          "lesson_id": "2008",
+          "lesson_title": "Metasploitable Linux",
+          "duration": "3:53 min",
+          "video_url": "https://youtu.be/i2c7keFdicw"
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "64c8d944ce177e9671d231aa"
+      },
+      "course_id": "1007",
+      "lessons": [
+        {
+          "lesson_id": "2001",
+          "lesson_title": "Introduction",
+          "duration": "7:48 min",
+          "video_url": "https://youtu.be/kmeaG_BQZ7M"
+        },
+        {
+          "lesson_id": "2002",
+          "lesson_title": "Why & goals",
+          "duration": "6:38 min",
+          "video_url": "https://youtu.be/Fo2iyeBZtW4"
+        },
+        {
+          "lesson_id": "2003",
+          "lesson_title": "Artificial Intelligence",
+          "duration": "6:02 min",
+          "video_url": "https://youtu.be/uMWaOv9-oHo"
+        },
+        {
+          "lesson_id": "2004",
+          "lesson_title": "introduction to agents in artificial intelligence",
+          "duration": "12:20 min",
+          "video_url": "https://youtu.be/2iHaSVEadiI"
+        },
+        {
+          "lesson_id": "2005",
+          "lesson_title": "agents in ai",
+          "duration": "9:38 min",
+          "video_url": "https://youtu.be/Ov0kBRS1tmg"
+        },
+        {
+          "lesson_id": "2006",
+          "lesson_title": "simple & model based reflex in artificial intelligence",
+          "duration": "10:09 min",
+          "video_url": "https://youtu.be/rWh9cK0ycuw"
+        },
+        {
+          "lesson_id": "2007",
+          "lesson_title": "learning, goal & utility based",
+          "duration": "13:18 min",
+          "video_url": "https://youtu.be/4GsHzPsgq-A"
+        },
+        {
+          "lesson_id": "2008",
+          "lesson_title": "Environment features in Artificial intelligence",
+          "duration": "18:20 min",
+          "video_url": "https://youtu.be/nwQZSP6hyf0"
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "64c8d944ce177e9671d231ab"
+      },
+      "course_id": "1008",
+      "lessons": [
+        {
+          "lesson_id": "2001",
+          "lesson_title": "What Is Digital Marketing?",
+          "duration": "5:25 min",
+          "video_url": "https://youtu.be/bixR-KIJKYM"
+        },
+        {
+          "lesson_id": "2002",
+          "lesson_title": "Digital Marketing Course Part - 1",
+          "duration": "10 hours",
+          "video_url": "https://youtu.be/nU-IIXBWlS4"
+        },
+        {
+          "lesson_id": "2003",
+          "lesson_title": "Digital Marketing Course Part - 2",
+          "duration": "10 hours",
+          "video_url": "https://youtu.be/fsDwHJa_xcEE"
+        },
+        {
+          "lesson_id": "2004",
+          "lesson_title": "Digital Marketing Course Part - 3",
+          "duration": "6 hours",
+          "video_url": "https://youtu.be/gNBXwFsNm-8"
+        },
+        {
+          "lesson_id": "2005",
+          "lesson_title": "Digital Marketing Course Part - 4",
+          "duration": "11 hours",
+          "video_url": "https://youtu.be/dMK_3lH1YPo"
+        },
+        {
+          "lesson_id": "2006",
+          "lesson_title": "Digital Marketing Course Part - 5",
+          "duration": "37:34 min",
+          "video_url": "https://youtu.be/gkjafTTU_Go"
+        },
+        {
+          "lesson_id": "2007",
+          "lesson_title": "Digital Marketing Course Part - 6",
+          "duration": "1 hour",
+          "video_url": "https://youtu.be/ZVuHLPl69mM"
+        },
+        {
+          "lesson_id": "2008",
+          "lesson_title": "Digital Marketing Course Part - 7",
+          "duration": "6:02 min",
+          "video_url": "https://youtu.be/xA_yMYN19ug"
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "64c8d944ce177e9671d231ac"
+      },
+      "course_id": "1009",
+      "lessons": [
+        {
+          "lesson_id": "2001",
+          "lesson_title": "Introduction to the ACCA Financial Management (FM) Exam",
+          "duration": "17:30 min",
+          "video_url": "https://youtu.be/RSkZomk7zDo"
+        },
+        {
+          "lesson_id": "2002",
+          "lesson_title": "The management of receivables Introduction - ACCA Financial Management",
+          "duration": "12:12 min",
+          "video_url": "https://youtu.be/tLmePnbC3ZQ"
+        },
+        {
+          "lesson_id": "2003",
+          "lesson_title": "Inventory Management – The Just-in-time system",
+          "duration": "15:58 min",
+          "video_url": "https://youtu.be/x14XDZPmEDc"
+        },
+        {
+          "lesson_id": "2004",
+          "lesson_title": "Quantity discounts",
+          "duration": "17:43 min",
+          "video_url": "https://youtu.be/49aFBTGXN44"
+        },
+        {
+          "lesson_id": "2005",
+          "lesson_title": "Economic order quantity",
+          "duration": "28:28 min",
+          "video_url": "https://youtu.be/ObRVsnUxNDY"
+        },
+        {
+          "lesson_id": "2006",
+          "lesson_title": "Overcapitalisation and Overtrading - ACCA Financial Management",
+          "duration": "11:49 min",
+          "video_url": "https://youtu.be/98py5xPig9o"
+        },
+        {
+          "lesson_id": "2007",
+          "lesson_title": "Management of Working Capital  - Introduction",
+          "duration": "30:19 min",
+          "video_url": "https://youtu.be/2DToL4a4WZE"
+        },
+        {
+          "lesson_id": "2008",
+          "lesson_title": "The financial management environment",
+          "duration": "33:04 min",
+          "video_url": "https://youtu.be/QXAi4Tje2aI"
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "64c8d944ce177e9671d231ad"
+      },
+      "course_id": "1010",
+      "lessons": [
+        {
+          "lesson_id": "2001",
+          "lesson_title": "PHOTOGRAPHY BASICS in 10 MINUTES",
+          "duration": "11:10 min",
+          "video_url": "https://youtu.be/V7z7BAZdt2M"
+        },
+        {
+          "lesson_id": "2002",
+          "lesson_title": "80% Of Photography Basics In Just 10 Minutes",
+          "duration": "9:51 min",
+          "video_url": "https://youtu.be/hVuTuib65WM"
+        },
+        {
+          "lesson_id": "2003",
+          "lesson_title": "CAMERA BASICS!",
+          "duration": "7:14 min",
+          "video_url": "https://youtu.be/ixRKeQMa7Nc"
+        },
+        {
+          "lesson_id": "2004",
+          "lesson_title": "How To Make A Website From HTML & CSS ",
+          "duration": "9:09 min",
+          "video_url": "https://youtu.be/5iUB31h2Hzs"
+        },
+        {
+          "lesson_id": "2005",
+          "lesson_title": "20 Essential Photography Tips For Beginner Photographers (Get Good, Fast)",
+          "duration": "19:17 min",
+          "video_url": "https://youtu.be/f2XsQkuAsaU"
+        },
+        {
+          "lesson_id": "2006",
+          "lesson_title": "3 EASY PHOTOGRAPHY TIPS every BEGINNER should know",
+          "duration": "7:04 min",
+          "video_url": "https://youtu.be/ADjHnOtTXLY"
+        },
+        {
+          "lesson_id": "2007",
+          "lesson_title": "7 Rules of Cinematic Framing and Composition",
+          "duration": "9:28 min",
+          "video_url": "https://youtu.be/MYlgj1hwcYw"
+        },
+        {
+          "lesson_id": "2008",
+          "lesson_title": "7 PHOTOGRAPHY MISTAKES I see all the time",
+          "duration": "19:33 min",
+          "video_url": "https://youtu.be/ZHnNyKQsdLw"
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "64c8d944ce177e9671d231ae"
+      },
+      "course_id": "1011",
+      "lessons": [
+        {
+          "lesson_id": "2001",
+          "lesson_title": "Business Writing Tips",
+          "duration": "1:58 min",
+          "video_url": "https://youtu.be/LrKesGslOYs"
+        },
+        {
+          "lesson_id": "2002",
+          "lesson_title": "Communicate with influence, every time...",
+          "duration": "3:55 min",
+          "video_url": "https://youtu.be/27m3kOnm19I"
+        },
+        {
+          "lesson_id": "2003",
+          "lesson_title": "Five Tips for Overcoming Phone Anxiety",
+          "duration": "2:00 min",
+          "video_url": "https://youtu.be/QcKbxaGpwf4"
+        },
+        {
+          "lesson_id": "2004",
+          "lesson_title": "Writing an Effective Business Email",
+          "duration": "2:17 min",
+          "video_url": "https://youtu.be/amJZXjxnhTI"
+        },
+        {
+          "lesson_id": "2005",
+          "lesson_title": "Project Management Tutorial - How to communicate effectively in business",
+          "duration": "3:20 min",
+          "video_url": "https://youtu.be/8Jh_EExJJ68"
+        },
+        {
+          "lesson_id": "2006",
+          "lesson_title": "Business Communication Skills Tip To Action Others On Their Goals",
+          "duration": "3:12 min",
+          "video_url": "https://youtu.be/DmUr8wHQ7pI"
+        },
+        {
+          "lesson_id": "2007",
+          "lesson_title": "Writing a Powerful Business Report",
+          "duration": "2:17 min",
+          "video_url": "https://youtu.be/Sq2SDdz1i8U"
+        },
+        {
+          "lesson_id": "2008",
+          "lesson_title": "Giving Feedback",
+          "duration": "1:47 min",
+          "video_url": "https://youtu.be/Id_uG8Djdsc"
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "64c8d944ce177e9671d231af"
+      },
+      "course_id": "1012",
+      "lessons": [
+        {
+          "lesson_id": "2001",
+          "lesson_title": "14 Mixing Tips I Wish I Knew When I Started",
+          "duration": "24:59 min",
+          "video_url": "https://youtu.be/buBH3aPBQ5k"
+        },
+        {
+          "lesson_id": "2002",
+          "lesson_title": "How To Get A SKRILLEX Level Mix & Master",
+          "duration": "9:41 min",
+          "video_url": "https://youtu.be/ZSP_WNHu_oQ"
+        },
+        {
+          "lesson_id": "2003",
+          "lesson_title": "I Learn How to Produce Music in 12 DAYS!",
+          "duration": "9:48 min",
+          "video_url": "https://youtu.be/Gqb-h_y55x0"
+        },
+        {
+          "lesson_id": "2004",
+          "lesson_title": "Mixing And Mastering Explained",
+          "duration": "8:02 min",
+          "video_url": "https://youtu.be/UL73IwwBy5M"
+        },
+        {
+          "lesson_id": "2005",
+          "lesson_title": "Sound Design COMPLETE course - EVERYTHING you need to know to craft any sound",
+          "duration": "2 hours",
+          "video_url": "https://youtu.be/jWorjBDcty4"
+        },
+        {
+          "lesson_id": "2006",
+          "lesson_title": "How To Remix ANY Song",
+          "duration": "21:03 min",
+          "video_url": "https://youtu.be/tJd6LnwKOLE"
+        },
+        {
+          "lesson_id": "2007",
+          "lesson_title": "How to DJ for Beginners",
+          "duration": "18:02 min",
+          "video_url": "https://youtu.be/gzjasvooSG8"
+        },
+        {
+          "lesson_id": "2008",
+          "lesson_title": "VOCAL EQ SECRETS of the PRO’s",
+          "duration": "9:39 min",
+          "video_url": "https://youtu.be/Wq1di2luMcs"
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "64c8d944ce177e9671d231b0"
+      },
+      "course_id": "1013",
+      "lessons": [
+        {
+          "lesson_id": "2001",
+          "lesson_title": "Intro to Project Management | Google Project Management Certificate",
+          "duration": "7:33 min",
+          "video_url": "https://youtu.be/rck3MnC7OXA"
+        },
+        {
+          "lesson_id": "2002",
+          "lesson_title": "Professional Project Management Skills",
+          "duration": "21:53 min",
+          "video_url": "https://youtu.be/KH-qoTqtMXE"
+        },
+        {
+          "lesson_id": "2003",
+          "lesson_title": "Project Structures & Life Cycles",
+          "duration": "34:53 min",
+          "video_url": "https://youtu.be/8unOyycCpFs"
+        },
+        {
+          "lesson_id": "2004",
+          "lesson_title": "Finding Project Manager Jobs",
+          "duration": "6:10 min",
+          "video_url": "https://youtu.be/y7LDaaFeNn4"
+        },
+        {
+          "lesson_id": "2005",
+          "lesson_title": "How Company Culture Affects Project Management",
+          "duration": "27:51 min",
+          "video_url": "https://youtu.be/f0VcIWJNDAI"
+        },
+        {
+          "lesson_id": "2006",
+          "lesson_title": "How to Run a Successful Meeting",
+          "duration": "7:49 min",
+          "video_url": "https://youtu.be/_mxovBWI9m0"
+        },
+        {
+          "lesson_id": "2007",
+          "lesson_title": "Communicate Effectively as a Project Manager",
+          "duration": "8:02 min",
+          "video_url": "https://youtu.be/bQ1fWZBRlLo"
+        },
+        {
+          "lesson_id": "2008",
+          "lesson_title": "Communicate Effectively as a Project Manager",
+          "duration": "8:02 min",
+          "video_url": "https://youtu.be/bQ1fWZBRlLo"
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "64c8d944ce177e9671d231b1"
+      },
+      "course_id": "1014",
+      "lessons": [
+        {
+          "lesson_id": "2001",
+          "lesson_title": "Beginner Intro to Neural Networks 1",
+          "duration": "14:14 min",
+          "video_url": "https://youtu.be/gQojMIhELvM"
+        },
+        {
+          "lesson_id": "2002",
+          "lesson_title": "Beginner Intro to Neural Networks 2",
+          "duration": "18:45 min",
+          "video_url": "https://youtu.be/JNlxvwc-Hho"
+        },
+        {
+          "lesson_id": "2003",
+          "lesson_title": "Beginner Intro to Neural Networks 3",
+          "duration": "11:44 min",
+          "video_url": "https://youtu.be/PUHjqT3xcTsE"
+        },
+        {
+          "lesson_id": "2004",
+          "lesson_title": "Beginner Intro to Neural Networks 4",
+          "duration": "5:52 min",
+          "video_url": "https://youtu.be/gwitf7ABtK8"
+        },
+        {
+          "lesson_id": "2005",
+          "lesson_title": "Beginner Intro to Neural Networks 5",
+          "duration": "8:26 min",
+          "video_url": "https://youtu.be/c6NBkkKNZXw"
+        },
+        {
+          "lesson_id": "2006",
+          "lesson_title": "Beginner Intro to Neural Networks 6",
+          "duration": "14:06 min",
+          "video_url": "https://youtu.be/Gvq9sUHPgrc"
+        },
+        {
+          "lesson_id": "2007",
+          "lesson_title": "Beginner Intro to Neural Networks 7",
+          "duration": "9:40 min",
+          "video_url": "https://youtu.be/EnGmg-kvpYs"
+        },
+        {
+          "lesson_id": "2008",
+          "lesson_title": "Beginner Intro to Neural Networks 8",
+          "duration": "10:04 min",
+          "video_url": "https://youtu.be/GwVTM28HKYk"
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "64c8d944ce177e9671d231b2"
+      },
+      "course_id": "1015",
+      "lessons": [
+        {
+          "lesson_id": "2001",
+          "lesson_title": "What is Android & How it Work?",
+          "duration": "17:54 min",
+          "video_url": "https://youtu.be/HyU4vkZ2NB8"
+        },
+        {
+          "lesson_id": "2002",
+          "lesson_title": "History of Android: How did Google Acquire Android?",
+          "duration": "17:55 min",
+          "video_url": "https://youtu.be/mbmka5RYuXg"
+        },
+        {
+          "lesson_id": "2003",
+          "lesson_title": "Android Versions A to Z: Evolution of All Android Versions from 1.0 to 12",
+          "duration": "28:14 min",
+          "video_url": "https://youtu.be/y1R_3bly7MQ"
+        },
+        {
+          "lesson_id": "2004",
+          "lesson_title": "What is IDE for Android?",
+          "duration": "8:14 min",
+          "video_url": "https://youtu.be/YW6kyOUpWQo"
+        },
+        {
+          "lesson_id": "2005",
+          "lesson_title": "How to Install and Set up Android Studio on Windows (Latest Version) - Installation Guide",
+          "duration": "25:30 min",
+          "video_url": "https://youtu.be/PmiSj2QGZVM"
+        },
+        {
+          "lesson_id": "2006",
+          "lesson_title": "How to Install & Setup Android Studio on MAC OS",
+          "duration": "10:10 min",
+          "video_url": "https://youtu.be/-NpB2E0cXcY"
+        },
+        {
+          "lesson_id": "2007",
+          "lesson_title": "How to Install Android Studio on Ubuntu (Linux Latest Version)",
+          "duration": "12:15 min",
+          "video_url": "https://youtu.be/xMCAkUsdDT8"
+        },
+        {
+          "lesson_id": "2008",
+          "lesson_title": "What is Front End and Back End in Android App",
+          "duration": "15:07 min",
+          "video_url": "https://youtu.be/CqwbpwEK9OU"
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "64c8d944ce177e9671d231b3"
+      },
+      "course_id": "1016",
+      "lessons": [
+        {
+          "lesson_id": "2001",
+          "lesson_title": "I Tried Selling AI Art Prints On Etsy For 30 Days",
+          "duration": "8:01 min",
+          "video_url": "https://youtu.be/rsdzvXe6IEc"
+        },
+        {
+          "lesson_id": "2002",
+          "lesson_title": "My Entire Graphic Design Degree in 12 Minutes",
+          "duration": "12:53 min",
+          "video_url": "https://youtu.be/CUnY8mraO7w"
+        },
+        {
+          "lesson_id": "2003",
+          "lesson_title": "HTML CSS Tutorial for Beginners",
+          "duration": "7:03 min",
+          "video_url": "https://youtu.be/J35jug1uHzE"
+        },
+        {
+          "lesson_id": "2004",
+          "lesson_title": "How To Make A Website From HTML & CSS ",
+          "duration": "9:09 min",
+          "video_url": "https://youtu.be/5iUB31h2Hzs"
+        },
+        {
+          "lesson_id": "2005",
+          "lesson_title": "EASY! Hand-code an HTML + CSS layout",
+          "duration": "11:24 min",
+          "video_url": "https://youtu.be/dMK_3lH1YPo"
+        },
+        {
+          "lesson_id": "2006",
+          "lesson_title": "Build an HTML + CSS Layout with Flexbox in just a few lines of code",
+          "duration": "7:04 min",
+          "video_url": "https://youtu.be/aRMIdKRYg6c"
+        },
+        {
+          "lesson_id": "2007",
+          "lesson_title": "HTML CSS TUTORIAL FOR BEGINNERS - multiple pages",
+          "duration": "9:09 min",
+          "video_url": "https://youtu.be/iXSSHlOe47s"
+        },
+        {
+          "lesson_id": "2008",
+          "lesson_title": "CSS SELECTORS MADE EASY - HTML CSS Tutorial for Beginners",
+          "duration": "11:20 min",
+          "video_url": "https://youtu.be/dcCCOiQ1ZuM"
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "64c8d944ce177e9671d231b4"
+      },
+      "course_id": "1017",
+      "lessons": [
+        {
+          "lesson_id": "2001",
+          "lesson_title": "How to make a website",
+          "duration": "5:23 min",
+          "video_url": "https://youtu.be/gQojMIhELvM"
+        },
+        {
+          "lesson_id": "2002",
+          "lesson_title": "HTML Tutorial for Beginners",
+          "duration": "11:58 min",
+          "video_url": "https://youtu.be/RjHflb-QgVc"
+        },
+        {
+          "lesson_id": "2003",
+          "lesson_title": "HTML CSS Tutorial for Beginners",
+          "duration": "7:03 min",
+          "video_url": "https://youtu.be/J35jug1uHzE"
+        },
+        {
+          "lesson_id": "2004",
+          "lesson_title": "How To Make A Website From HTML & CSS ",
+          "duration": "9:09 min",
+          "video_url": "https://youtu.be/5iUB31h2Hzs"
+        },
+        {
+          "lesson_id": "2005",
+          "lesson_title": "EASY! Hand-code an HTML + CSS layout",
+          "duration": "11:24 min",
+          "video_url": "https://youtu.be/dMK_3lH1YPo"
+        },
+        {
+          "lesson_id": "2006",
+          "lesson_title": "Build an HTML + CSS Layout with Flexbox in just a few lines of code",
+          "duration": "7:04 min",
+          "video_url": "https://youtu.be/aRMIdKRYg6c"
+        },
+        {
+          "lesson_id": "2007",
+          "lesson_title": "HTML CSS TUTORIAL FOR BEGINNERS - multiple pages",
+          "duration": "9:09 min",
+          "video_url": "https://youtu.be/iXSSHlOe47s"
+        },
+        {
+          "lesson_id": "2008",
+          "lesson_title": "CSS SELECTORS MADE EASY - HTML CSS Tutorial for Beginners",
+          "duration": "11:20 min",
+          "video_url": "https://youtu.be/dcCCOiQ1ZuM"
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "64c8d944ce177e9671d231b5"
+      },
+      "course_id": "1018",
+      "lessons": [
+        {
+          "lesson_id": "2001",
+          "lesson_title": "How to make a website",
+          "duration": "5:23 min",
+          "video_url": "https://youtu.be/gQojMIhELvM"
+        },
+        {
+          "lesson_id": "2002",
+          "lesson_title": "HTML Tutorial for Beginners",
+          "duration": "11:58 min",
+          "video_url": "https://youtu.be/RjHflb-QgVc"
+        },
+        {
+          "lesson_id": "2003",
+          "lesson_title": "HTML CSS Tutorial for Beginners",
+          "duration": "7:03 min",
+          "video_url": "https://youtu.be/J35jug1uHzE"
+        },
+        {
+          "lesson_id": "2004",
+          "lesson_title": "How To Make A Website From HTML & CSS ",
+          "duration": "9:09 min",
+          "video_url": "https://youtu.be/5iUB31h2Hzs"
+        },
+        {
+          "lesson_id": "2005",
+          "lesson_title": "EASY! Hand-code an HTML + CSS layout",
+          "duration": "11:24 min",
+          "video_url": "https://youtu.be/dMK_3lH1YPo"
+        },
+        {
+          "lesson_id": "2006",
+          "lesson_title": "Build an HTML + CSS Layout with Flexbox in just a few lines of code",
+          "duration": "7:04 min",
+          "video_url": "https://youtu.be/aRMIdKRYg6c"
+        },
+        {
+          "lesson_id": "2007",
+          "lesson_title": "HTML CSS TUTORIAL FOR BEGINNERS - multiple pages",
+          "duration": "9:09 min",
+          "video_url": "https://youtu.be/iXSSHlOe47s"
+        },
+        {
+          "lesson_id": "2008",
+          "lesson_title": "CSS SELECTORS MADE EASY - HTML CSS Tutorial for Beginners",
+          "duration": "11:20 min",
+          "video_url": "https://youtu.be/dcCCOiQ1ZuM"
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "64c8d944ce177e9671d231b6"
+      },
+      "course_id": "1019",
+      "lessons": [
+        {
+          "lesson_id": "2001",
+          "lesson_title": "How to make a website",
+          "duration": "5:23 min",
+          "video_url": "https://youtu.be/gQojMIhELvM"
+        },
+        {
+          "lesson_id": "2002",
+          "lesson_title": "HTML Tutorial for Beginners",
+          "duration": "11:58 min",
+          "video_url": "https://youtu.be/RjHflb-QgVc"
+        },
+        {
+          "lesson_id": "2003",
+          "lesson_title": "HTML CSS Tutorial for Beginners",
+          "duration": "7:03 min",
+          "video_url": "https://youtu.be/J35jug1uHzE"
+        },
+        {
+          "lesson_id": "2004",
+          "lesson_title": "How To Make A Website From HTML & CSS ",
+          "duration": "9:09 min",
+          "video_url": "https://youtu.be/5iUB31h2Hzs"
+        },
+        {
+          "lesson_id": "2005",
+          "lesson_title": "EASY! Hand-code an HTML + CSS layout",
+          "duration": "11:24 min",
+          "video_url": "https://youtu.be/dMK_3lH1YPo"
+        },
+        {
+          "lesson_id": "2006",
+          "lesson_title": "Build an HTML + CSS Layout with Flexbox in just a few lines of code",
+          "duration": "7:04 min",
+          "video_url": "https://youtu.be/aRMIdKRYg6c"
+        },
+        {
+          "lesson_id": "2007",
+          "lesson_title": "HTML CSS TUTORIAL FOR BEGINNERS - multiple pages",
+          "duration": "9:09 min",
+          "video_url": "https://youtu.be/iXSSHlOe47s"
+        },
+        {
+          "lesson_id": "2008",
+          "lesson_title": "CSS SELECTORS MADE EASY - HTML CSS Tutorial for Beginners",
+          "duration": "11:20 min",
+          "video_url": "https://youtu.be/dcCCOiQ1ZuM"
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "64c8d944ce177e9671d231b7"
+      },
+      "course_id": "1020",
+      "lessons": [
+        {
+          "lesson_id": "2001",
+          "lesson_title": "How to make a website",
+          "duration": "5:23 min",
+          "video_url": "https://youtu.be/gQojMIhELvM"
+        },
+        {
+          "lesson_id": "2002",
+          "lesson_title": "HTML Tutorial for Beginners",
+          "duration": "11:58 min",
+          "video_url": "https://youtu.be/RjHflb-QgVc"
+        },
+        {
+          "lesson_id": "2003",
+          "lesson_title": "HTML CSS Tutorial for Beginners",
+          "duration": "7:03 min",
+          "video_url": "https://youtu.be/J35jug1uHzE"
+        },
+        {
+          "lesson_id": "2004",
+          "lesson_title": "How To Make A Website From HTML & CSS ",
+          "duration": "9:09 min",
+          "video_url": "https://youtu.be/5iUB31h2Hzs"
+        },
+        {
+          "lesson_id": "2005",
+          "lesson_title": "EASY! Hand-code an HTML + CSS layout",
+          "duration": "11:24 min",
+          "video_url": "https://youtu.be/dMK_3lH1YPo"
+        },
+        {
+          "lesson_id": "2006",
+          "lesson_title": "Build an HTML + CSS Layout with Flexbox in just a few lines of code",
+          "duration": "7:04 min",
+          "video_url": "https://youtu.be/aRMIdKRYg6c"
+        },
+        {
+          "lesson_id": "2007",
+          "lesson_title": "HTML CSS TUTORIAL FOR BEGINNERS - multiple pages",
+          "duration": "9:09 min",
+          "video_url": "https://youtu.be/iXSSHlOe47s"
+        },
+        {
+          "lesson_id": "2008",
+          "lesson_title": "CSS SELECTORS MADE EASY - HTML CSS Tutorial for Beginners",
+          "duration": "11:20 min",
+          "video_url": "https://youtu.be/dcCCOiQ1ZuM"
+        }
+      ]
+    }
+  ]
