@@ -97,6 +97,27 @@ UserSchema.statics.addUser = async function (username, email, password, role) {
   return user;
 };
 
+// static login method
+UserSchema.statics.login = async function (email, password) {
+  //validation
+  if (!email || !password) {
+    throw Error("All fields must be filled");
+  }
+
+  const user = await this.findOne({ email });
+
+  if (!user) {
+    throw Error("Incorrect email or password");
+  }
+
+  const match = await bcryptjs.compare(password, user.password);
+  if (!match) {
+    throw Error("Incorrect email or password");
+  }
+
+  return user;
+};
+
 const User = mongoose.model("User", UserSchema);
 
 module.exports = User;
