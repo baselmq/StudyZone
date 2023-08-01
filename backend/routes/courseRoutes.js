@@ -6,12 +6,12 @@ const router = express.Router();
 router
   .route("/")
   .get(courseController.getAllCourses)
-  .post(courseController.createCourse);
+  // .post(courseController.createCourse);
 
 router
   .route("/:id")
   .get(courseController.getCourse)
-  .patch(courseController.updateCourse)
-  .delete(courseController.deleteCourse);
+//   .patch(courseController.updateCourse)
+//   .delete(courseController.deleteCourse);
 
 module.exports = router;

@@ -4,6 +4,7 @@ const connectDB = require("./config/db");
 const errorHandler = require("./middleware/error");
 const auth = require("./routes/auth");
 const cors = require('cors');
+const courseRoutes = require("./routes/courseRoutes");
 const lessonRoutes = require('./routes/lessonRoutes');
 // Connect DB
 
