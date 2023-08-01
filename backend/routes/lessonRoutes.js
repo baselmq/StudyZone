@@ -4,18 +4,18 @@ const router = express.Router();
 const lessonController = require('../controllers/lessonController');
 
 // Create a new lesson
-router.post('/lessons', lessonController.createLesson);
+router.post('/', lessonController.createLesson);
 
 // Get all lessons
-router.get('/lessons', lessonController.getAllLessons);
+router.get('/', lessonController.getAllLessons);
 
 // Get a single lesson by ID
-router.get('/lessons/:id', lessonController.getLessonById);
+router.get('/:id', lessonController.getLessonById);
 
 // Update a lesson by ID
-router.patch('/lessons/:id', lessonController.updateLesson);
+router.patch('/:id', lessonController.updateLesson);
 
 // Delete a lesson by ID
-router.delete('/lessons/:id', lessonController.deleteLesson);
+router.delete('/:id', lessonController.deleteLesson);
 
 module.exports = router;

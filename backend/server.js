@@ -16,11 +16,10 @@ app.use(express.json());
 
 app.use("/api/auth", auth);
 app.use("/api/private", require("./routes/private"));
-app.use('/api', lessonRoutes);
+app.use('/api/lesson', lessonRoutes);
 // app.use("/api/admin/login", loginRoutes);
 // app.use("/api/admin/courses", courseRoutes);
 // app.use("/api/admin/users", userRoutes);
-const cors = require('cors');
 // Error Handler should be last piece of middleware
 
 app.use(errorHandler);
