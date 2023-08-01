@@ -14,6 +14,7 @@ import Nav from "../Components/Nav";
 import Footer from "../Components/Footer";
 import ForgotPasswordInput from "../Components/ForgetPasswordInput";
 import ResetPasswordInput from "../Components/ResetPasswordInput";
+import PageLayout from "../admin-component/PageLayout";
 
 
 const AppLayout = () => (
@@ -24,9 +25,15 @@ const AppLayout = () => (
   </>
 );
 
+
+
 function App() {
   return (
     <>
+     {/*Admin Dashboard*/}
+    {/* <PageLayout /> */}
+
+    
       <BrowserRouter>
         {/* <Nav/> */}
         <Routes>
