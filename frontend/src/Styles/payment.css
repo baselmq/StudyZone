@@ -10,7 +10,7 @@
     margin: 0 -16px;
 }
 
-.col-50 {
+.pay_50 {
     flex: 50%;
 }
 
@@ -69,9 +69,5 @@ label {
 @media (max-width: 800px) {
     .pay_row {
         flex-direction: column-reverse;
-    }
-
-    .col-25 {
-        margin-bottom: 20px;
     }
 }

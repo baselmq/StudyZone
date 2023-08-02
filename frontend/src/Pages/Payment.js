@@ -9,7 +9,7 @@ const Payment = () => {
           <div className="container pay_container">
             <form action="/">
               <div className="row pay_row">
-                <div className="col-50">
+                <div className="col-50 pay_50">
                   <h3>Billing Address</h3>
                   <label htmlFor="fname">
                     <i className="fa fa-user"></i> Full Name
@@ -44,18 +44,18 @@ const Payment = () => {
                   <input type="text" id="city" name="city" placeholder="City" />
 
                   <div className="row pay_row">
-                    <div className="col-50">
+                    <div className="col-50 pay_50">
                       <label htmlFor="state">State</label>
                       <input type="text" id="state" name="state" placeholder="NY" />
                     </div>
-                    <div className="col-50">
+                    <div className="col-50 pay_50">
                       <label htmlFor="zip">Zip</label>
                       <input type="text" id="zip" name="zip" placeholder="10001" />
                     </div>
                   </div>
                 </div>
 
-                <div className="col-50">
+                <div className="col-50 pay_50">
                   <h3>Payment</h3>
                   <label htmlFor="fname">Accepted Cards</label>
                   <div className="icon-container">
@@ -86,11 +86,11 @@ const Payment = () => {
                     placeholder="September"
                   />
                   <div className="row pay_row">
-                    <div className="col-50">
+                    <div className="col-50 pay_50">
                       <label htmlFor="expyear">Exp Year</label>
                       <input type="text" id="expyear" name="expyear" placeholder="2018" />
                     </div>
-                    <div className="col-50">
+                    <div className="col-50 pay_50">
                       <label htmlFor="cvv">CVV</label>
                       <input type="text" id="cvv" name="cvv" placeholder="123" />
                     </div>
