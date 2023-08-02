@@ -27,7 +27,7 @@ const Sidebar = () => {
         <div class="sidebar-menu">
           <ul>
             <li>
-              <Link to="#" class="active">
+              <Link to="/admin" class="active">
                 <span class="las la-adjust"></span>
                 <span>Dashboard</span>
               </Link>

@@ -1,16 +1,16 @@
-import React from 'react';
-import Header from './Header';
-import AnalyticsSection from './AnalyticsSection';
-import BlockGridSection from './BlockGridSection';
+import React from "react";
+import Header from "./Header";
+import AnalyticsSection from "./AnalyticsSection";
+import BlockGridSection from "./BlockGridSection";
 const MainContent = () => {
   return (
-<div class="main-content">
-<Header />
-  <main>
-  <AnalyticsSection />
-  {/* <BlockGridSection /> */}
-  </main>
-</div>
+    <div class="main-content">
+      <Header title={"Analytics"} />
+      <main>
+        <AnalyticsSection />
+        {/* <BlockGridSection /> */}
+      </main>
+    </div>
   );
 };
 

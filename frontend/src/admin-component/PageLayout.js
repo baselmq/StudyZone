@@ -1,7 +1,7 @@
-import React from 'react';
-import Sidebar from './Sidebar';
-import MainContent from './MainContent';
-import '../admin-style/admin.css'
+import React from "react";
+import Sidebar from "./Sidebar";
+import MainContent from "./MainContent";
+import "../admin-style/admin.css";
 
 const PageLayout = () => {
   return (
@@ -13,7 +13,6 @@ const PageLayout = () => {
 
       <Sidebar />
       <MainContent />
-     
     </>
   );
 };
