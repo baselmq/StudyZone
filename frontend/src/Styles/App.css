@@ -285,7 +285,7 @@ font-size: 20px;
   }
 
 }
-/* @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .navbar_{
     padding: 10px 10px;
   }
@@ -312,7 +312,7 @@ font-size: 20px;
 .navbar__search input{
   height: 40px;
 }
-} */
+}
 
 
 /* Login and Register pages*/
@@ -323,7 +323,7 @@ font-size: 20px;
   
 }
 
-.login-form {
+.login-form, .reset-form, .forget-form {
   display: flex;
     justify-content: center;
     align-items: center;
@@ -340,7 +340,7 @@ padding: 0;
 }
 
 
-.login_column_img{
+.login_column_img, .reset_column_img, .forget_column_img{
     width: 55%;
     height: 100vh;
     background-image: url('../../public/Images/login-bk.png');
@@ -357,10 +357,10 @@ padding: 0;
 }
 
 
-/* .login-form .column img {
+.login-form .column img {
   max-width: 100%;
   height: auto;
-} */
+}
 
 
 
@@ -440,9 +440,9 @@ margin: 20px auto 0 auto;
   margin-left: 5px;
 }
 
-.login-form .column .input-groups .btn-login {
+.login-form .column .input-groups .btn-login , .btn-reset, .btn-forget {
   display: block;
-  width: 90%;
+  width: 100%;
   padding: 15px;
   background-color: #49bbbd;
   color: #fff;

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import { useParams } from 'react-router-dom';
+import { useParams } from "react-router-dom";
 
 import "../Styles/ResetPassword.css";
 
@@ -42,7 +42,7 @@ const ResetPasswordScreen = () => {
       console.log(data);
       setSuccess(data.data);
     } catch (error) {
-     // console.log(error);
+      // console.log(error);
       //setError(error.response.data.error);
       setTimeout(() => {
         setError("");
@@ -50,51 +50,58 @@ const ResetPasswordScreen = () => {
     }
   };
 
-
   return (
-    <div className="resetpassword-screen">
-      <form
-        onSubmit={resetPasswordHandler}
-        className="resetpassword-screen__form"
-      >
-        <h3 className="resetpassword-screen__title">Forgot Password</h3>
-        {error && <span className="error-message">{error} </span>}
-        {success && (
-          <span className="success-message">
-            {success} <Link to="/login">Login</Link>
-          </span>
-        )}
-        <div className="form-group">
-          <label htmlFor="password">New Password:</label>
-          <input
-            type="password"
-            required
-            id="password"
-            placeholder="Enter new password"
-            autoComplete="true"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="confirmpassword">Confirm New Password:</label>
-          <input
-            type="password"
-            required
-            id="confirmpassword"
-            placeholder="Confirm new password"
-            autoComplete="true"
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-          />
-        </div>
-        <button type="submit" className="reset-btn btn-primary">
-          Reset Password
-        </button>
-      </form>
-    </div>
+      <div className="login_container">
+        <form onSubmit={resetPasswordHandler} className="login-form">
+          <div className="column">
+            <div className="input-groups_title">
+              <h1>Reset Password</h1>
+              {error && <span className="error-message">{error} </span>}
+              {success && (
+                <span className="success-message">
+                  {success} <Link to="/login">Login</Link>
+                </span>
+              )}
+            </div>
+            {/* password */}
+
+            <div className="input-groups">
+              <label htmlFor="password">New Password:</label>
+              <input
+                type="password"
+                required
+                id="password"
+                placeholder="Enter new password"
+                autoComplete="true"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </div>
+            {/* Confirm password */}
+            <div className="input-groups">
+              <label htmlFor="confirmpassword">Confirm New Password:</label>
+              <input
+                type="password"
+                required
+                id="confirmpassword"
+                placeholder="Confirm new password"
+                autoComplete="true"
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+              />
+            </div>
+            {/* reset password button */}
+            <div className="input-groups">
+              <button className="btn-reset mt-4" type="submit">
+                Reset Password
+              </button>
+            </div>
+          </div>
+          <div className="reset_column_img"></div>
+        </form>
+      </div>
+
   );
 };
-
 
 export default ResetPasswordScreen;
