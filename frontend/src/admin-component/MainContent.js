@@ -4,7 +4,7 @@ import AnalyticsSection from './AnalyticsSection';
 import BlockGridSection from './BlockGridSection';
 const MainContent = () => {
   return (
-<div class="main-content">
+<div className="main-content">
 <Header />
   <main>
   <AnalyticsSection />
