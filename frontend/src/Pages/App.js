@@ -14,8 +14,9 @@ import Nav from "../Components/Nav";
 import Footer from "../Components/Footer";
 import ForgotPasswordInput from "../Components/ForgetPasswordInput";
 import ResetPasswordInput from "../Components/ResetPasswordInput";
+import Cart from "./Cart";
+import Payment from "./Payment";
 import PageLayout from "../admin-component/PageLayout";
-
 
 const AppLayout = () => (
   <>
@@ -25,18 +26,15 @@ const AppLayout = () => (
   </>
 );
 
-
-
 function App() {
   return (
     <>
-     {/*Admin Dashboard*/}
-    <PageLayout />
+      {/*Admin Dashboard*/}
+      {/* <PageLayout /> */}
 
-    
       <BrowserRouter>
         <Routes>
-          {/* <Route element={<AppLayout />}>
+          <Route element={<AppLayout />}>
             <Route path="/" Component={LandingPage}></Route>
             <Route path="/courses" Component={Courses}></Route>
             <Route path="/category/:category" Component={Courses}></Route>
@@ -44,16 +42,17 @@ function App() {
             <Route path="/courses/:courseId" Component={CourseDetails}></Route>
           </Route>
 
+          <Route path="/pageLayout" Component={PageLayout}></Route>
           <Route path="/login" Component={Login}></Route>
+          <Route path="/cart" Component={Cart}></Route>
+          <Route path="/payment" Component={Payment}></Route>
           <Route path="/register" Component={Register}></Route>
           <Route path="/forgotpassword" element={<ForgotPasswordInput />} />
           <Route
             path="/passwordreset/:resetToken"
             element={<ResetPasswordInput />}
-          /> */}
-
+          />
         </Routes>
-
       </BrowserRouter>
     </>
   );

@@ -8,7 +8,7 @@ const MainContent = () => {
 <Header />
   <main>
   <AnalyticsSection />
-  <BlockGridSection />
+  {/* <BlockGridSection /> */}
   </main>
 </div>
   );
