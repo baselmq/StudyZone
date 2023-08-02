@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -26,33 +27,33 @@ const Sidebar = () => {
         <div class="sidebar-menu">
           <ul>
             <li>
-              <a href="" class="active">
+              <Link to="#" class="active">
                 <span class="las la-adjust"></span>
                 <span>Dashboard</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="">
+              <Link to="/admin/courses">
                 <span class="las la-swatchbook"></span>
                 <span>Courses</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="">
+              <Link to="/admin/lessons">
                 <span class="las la-book-reader"></span>
                 <span>Lessons</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="">
+              <Link to="/admin/users">
                 <span class="las la-user-cog"></span>
                 <span>Users</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="">
-              <span class="las la-sign-out-alt"></span>                <span>Logout</span>
-              </a>
+              <Link to="#">
+                <span class="las la-sign-out-alt"></span> <span>Logout</span>
+              </Link>
             </li>
           </ul>
         </div>

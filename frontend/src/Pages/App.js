@@ -17,6 +17,9 @@ import ResetPasswordInput from "../Components/ResetPasswordInput";
 import Cart from "./Cart";
 import Payment from "./Payment";
 import PageLayout from "../admin-component/PageLayout";
+import UsersAdmin from "../admin-pages/Users";
+import CoursesAdmin from "../admin-pages/Courses";
+import LessonsAdmin from "../admin-pages/Lessons";
 
 const AppLayout = () => (
   <>
@@ -38,14 +41,18 @@ function App() {
             <Route path="/" Component={LandingPage}></Route>
             <Route path="/courses" Component={Courses}></Route>
             <Route path="/category/:category" Component={Courses}></Route>
-
             <Route path="/courses/:courseId" Component={CourseDetails}></Route>
+            <Route path="/cart" Component={Cart}></Route>
+            <Route path="/payment" Component={Payment}></Route>
           </Route>
 
-          <Route path="/pageLayout" Component={PageLayout}></Route>
-          <Route path="/login" Component={Login}></Route>
+          <Route path="/admin" Component={PageLayout}></Route>
+          <Route path="/admin/users" Component={UsersAdmin}></Route>
+          <Route path="/admin/courses" Component={CoursesAdmin}></Route>
+          <Route path="/admin/lessons" Component={LessonsAdmin}></Route>
           <Route path="/cart" Component={Cart}></Route>
           <Route path="/payment" Component={Payment}></Route>
+          <Route path="/login" Component={Login}></Route>
           <Route path="/register" Component={Register}></Route>
           <Route path="/forgotpassword" element={<ForgotPasswordInput />} />
           <Route
