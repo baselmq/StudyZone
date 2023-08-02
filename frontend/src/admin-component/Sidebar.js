@@ -67,7 +67,7 @@ const Sidebar = () => {
             <h4>make ads</h4>
             <p>ADdd ads to you video </p>
           </div>
-          <button className="btn btn-main btn-block"> create now</button>
+          <button className="admin-btn btn-main btn-block"> create now</button>
         </div>
       </div>
     </div>

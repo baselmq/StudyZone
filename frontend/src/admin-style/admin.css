@@ -168,7 +168,7 @@ text-decoration:none
  color: #555;
 }
 
-.btn{
+.admin-btn{
   padding: .7rem 1rem;
   border: none;
   border-radius: 10px;
@@ -177,7 +177,7 @@ text-decoration:none
   ;
 }
 
-.btn span{
+.admin-btn span{
   font-size: 1.2rem;
   display: inline-block;
   margin-right: .7rem;

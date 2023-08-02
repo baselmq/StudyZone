@@ -14,7 +14,7 @@ const Header = () => {
     </div>
     </div>
     <div className="header-action">
-<button className="btn btn-main">
+<button className="admin-btn btn-main">
 <span className="las la-video"></span>
 upload
 </button>
