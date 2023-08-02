@@ -3,28 +3,28 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div class="sidebar">
-      <div class="sidebar-container">
-        <div class="brand">
+    <div className="sidebar">
+      <div className="sidebar-container">
+        <div className="brand">
           <h2>
-            <span class="lab la-staylinked"></span>
+            <span className="lab la-staylinked"></span>
             StudyZone
           </h2>
         </div>
-        <div class="sidebar-avartar">
+        <div className="sidebar-avartar">
           <div>
-            <img src="../Images/1.png"></img>
+            <img src="../Images/1.png" className="admin-img" alt=""></img>
           </div>
-          <div class="avartar-info">
-            <div class="avartar-text">
+          <div className="avartar-info">
+            <div className="avartar-text">
               <h4>Saadeh</h4>
               <small>1029-1021-1210</small>
             </div>
-            <span class="las la-angle-double-down"></span>
+            <span className="las la-angle-double-down"></span>
           </div>
         </div>
 
-        <div class="sidebar-menu">
+        <div className="sidebar-menu">
           <ul>
             <li>
               <Link to="/admin" class="active">
@@ -34,40 +34,41 @@ const Sidebar = () => {
             </li>
             <li>
               <Link to="/admin/courses">
-                <span class="las la-swatchbook"></span>
+                <span className="las la-swatchbook"></span>
                 <span>Courses</span>
               </Link>
             </li>
             <li>
               <Link to="/admin/lessons">
-                <span class="las la-book-reader"></span>
+                <span className="las la-book-reader"></span>
                 <span>Lessons</span>
               </Link>
             </li>
             <li>
               <Link to="/admin/users">
-                <span class="las la-user-cog"></span>
+                <span className="las la-user-cog"></span>
                 <span>Users</span>
               </Link>
             </li>
             <li>
               <Link to="#">
-                <span class="las la-sign-out-alt"></span> <span>Logout</span>
+                <span className="las la-sign-out-alt"></span>{" "}
+                <span>Logout</span>
               </Link>
             </li>
           </ul>
         </div>
 
-        <div class="sidebar-card">
-          <div class="side-card-icon">
-            <span class="lab la-codiepie"></span>
+        <div className="sidebar-card">
+          <div className="side-card-icon">
+            <span className="lab la-codiepie"></span>
           </div>
 
           <div>
             <h4>make ads</h4>
             <p>ADdd ads to you video </p>
           </div>
-          <button class="btn btn-main btn-block"> create now</button>
+          <button className="btn btn-main btn-block"> create now</button>
         </div>
       </div>
     </div>

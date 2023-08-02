@@ -20,7 +20,7 @@ app.use("/api/private", require("./routes/private"));
 // app.use("/api/admin/courses", courseRoutes);
 // app.use("/api/admin/users", userRoutes);
 
-app.use("/api/cart", userRoutes);
+app.use("/api/cart", cart);
 
 // const cors = require("cors");
 // Error Handler should be last piece of middleware
