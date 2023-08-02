@@ -484,6 +484,11 @@ background:#f2f2f2;
 padding:0 10px; 
 }
 
+.forgotpassword-screen__subtext {
+  font-size: 1.0rem;
+  margin: 5% 18%;
+}
+
 /* Responsive Styles */
 
 @media only screen and (max-width: 768px) {
