@@ -13,7 +13,7 @@ const Sidebar = () => {
         </div>
         <div class="sidebar-avartar">
           <div>
-            <img src="../Images/1.png"></img>
+            <img src="../Images/1.png" class='admin-img' alt=""></img>
           </div>
           <div class="avartar-info">
             <div class="avartar-text">

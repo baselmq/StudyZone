@@ -10,7 +10,7 @@ const BlockGridSection = () => {
 
               <div class="rev-content">
            
-                <img src='../Images/1.png'></img>
+                <img src='../Images/1.png' class='admin-img' alt=''></img>
                     <div class="rev-info">
                       <h3>Saadeh</h3>
                       <h1>3.5M <small>Subscribers</small></h1>
