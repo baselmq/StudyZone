@@ -15,7 +15,7 @@
 }
 
 
-.col-75 {
+.pay_75 {
     padding: 20px 0px 20px 0px;
 }
 
@@ -61,7 +61,7 @@ label {
     font-size: 17px;
 }
 
-.btn:hover {
+.pay_btn:hover {
     background-color: #49bbbd;
 }
 
