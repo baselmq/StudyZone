@@ -405,15 +405,12 @@ font-size: .8rem;
   align-items: center;
 }
 
-.icon-wrapper{
+.admin-icon-wrapper{
   display: flex;
   align-items: center;
-
-
- 
 }
 
-.icon{
+.admin-icon{
   height: 40px;
   width: 40px;
   border-radius: 7px;

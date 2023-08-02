@@ -27,10 +27,10 @@ const BlockGridSection = () => {
             <div className="graph-content">
               <div className="graph-head">
                 <div className="icon-wrapper">
-                  <div className="icon">
+                  <div className="admin-icon">
                     <span className="las la-eye text-main"></span>
                   </div>
-                  <div className="icon">
+                  <div className="admin-icon">
                     <span className="las la-clock text-success"></span>
                   </div>
                 </div>
