@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+// import EmptyCart from "../Components/EmptyCart";
 
 const Cart = () => {
   return (
@@ -15,12 +16,15 @@ const Cart = () => {
         className="d-flex flex-sm-column flex-lg-row  flex-md-row justify-content-lg-evenly  justify-content-md-evenly pt-5"
         id="main-container"
       >
+        {/* if the cart is empty */}
+        {/* <EmptyCart /> */}
+
         <div id="cart-section">
-          <div id="no-of-courses" className="border-bottom fw-bold">
-            2 course in Cart
-          </div>
-          {/* first course */}
-          <div className="d-inline-flex flex-row justify-content-start justify-content-md-evenly justify-content-sm-evenly border-bottom pb-4 mt-4">
+        <div id="no-of-courses" className="border-bottom fw-bold">
+            2 courses in Cart
+          </div> 
+        {/* first course */}
+        <div className="d-inline-flex flex-row justify-content-start justify-content-md-evenly justify-content-sm-evenly border-bottom pb-4 mt-4">
             <div id="col-1">
               <img
                 src="../Images/course-image.jpg"
@@ -41,8 +45,8 @@ const Cart = () => {
               </Button>
             </div>
           </div>
-          {/* second course */}
-          <div className="d-inline-flex flex-row justify-content-start justify-content-md-evenly justify-content-sm-evenly border-bottom pb-4 mt-4">
+        {/* second course */}
+        <div className="d-inline-flex flex-row justify-content-start justify-content-md-evenly justify-content-sm-evenly border-bottom pb-4 mt-4">
             <div id="col-1">
               <img
                 src="../Images/course-image.jpg"
@@ -76,7 +80,7 @@ const Cart = () => {
             </button>
           </Link>
         </div>
-      </div>
+       </div> 
     </>
   );
 };

@@ -43,6 +43,22 @@
   width: 80%;
 }
 
+/* start of styling Empty Cart component */
+#keep-shopping-btn{
+  width: 30%;
+  margin-left: 33%;
+}
+
+/* mobile */
+@media (max-width: 767px) {
+  #keep-shopping-btn{
+    width: fit-content;
+    margin-left: 31%;
+  }
+}
+/* end of styling Empty Cart component */
+
+
 /* mobile */
 @media (max-width: 767px) {
   #main-container {
