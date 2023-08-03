@@ -1,6 +1,10 @@
 import React from "react";
 import CardSlider from "../Components/Card_Slider";
 import { Link } from "react-router-dom";
+import jumbotron from "../assets/images/jumbotron.png";
+import certification from "../assets/images/Certification-rafiki.png";
+import courseapp from "../assets/images/Course app.png";
+
 function LandingPage() {
   const success = [
     { num: "15K", desc: "Students" },
@@ -12,38 +16,33 @@ function LandingPage() {
   return (
     <>
       {/* backgroundImage&info */}
-      <div className="container_img-slide">
-        <div>
-          <div className=" textBox_header_landing_page">
-            <h2 className="card-title " id="title_in_bg">
-              Online is now
-            </h2>
-            <h2>much easier</h2>
-            <span className="card-text brief_bg">
-              StudyZone is an interesting platform that will teach
-            </span>
-            <p className=" brief_bg">you in more an interactive way</p>
-            <Link
+      <div className="jumbtron-container">
+        <div id="first-col">
+          <h3 className="mb-4"><span className="fw-bold fs-1" id="online">Online</span> is now much easier</h3>
+          <h3 className="text-wrap mb-5">StudyZone is an interesting platform that will teach you in more an interactive way</h3>
+          <Link
               to={"/login"}
-              className="btn btn-secondary "
+              className="btn btn-secondary fs-4"
               id="btn_landing_page"
               type="button"
             >
               Join for free
             </Link>
-          </div>
         </div>
-        <div></div>
+        <div id="second-col">
+          <img src={jumbotron} alt="jumbotron" width="100%"/>
+        </div>
       </div>
       {/* /backgroundImage&info */}
       {/* A Broad Selection Of Courses. */}
+     
       <div className="broad_selection">
-        <h4 className="color_broad_selection"> </h4>
-        <span>
+        <h1 className="color_broad_selection"> </h1>
+        <span className="fs-4">
           StudyZone is one powerful online software suite that combines all the
           tools
         </span>
-        <p>needed to run a successful school or office.</p>
+        <p className="fs-4">needed to run a successful school or office.</p>
       </div>
       {/*/ A Broad Selection Of Courses. */}
 
@@ -60,17 +59,17 @@ function LandingPage() {
       {/* /All courses  */}
 
       {/* /Top Categories  */}
-      <div className="container text-center">
+      <div className="container text-center" id="top-categories">
         <div className="row">
-          <h2 className="section_heading_topCategories mb-5"></h2>
+          <h1 className="section_heading_topCategories mb-5"></h1>
 
-          <div className="col col_top_categories">
+          <div className="col-lg-3 col-md-6 col-sm-4  col_top_categories">
             <div className="card mx-auto card_topCategories">
               <div className="card-body">
                 <div className="icon-wrapper">
                   <i className="fa-solid fa-file-invoice"></i>
                 </div>
-                <h5 className="card-title card_title_topCategories">
+                <h5 className="card-title card_title_topCategories fw-bold py-2">
                   Customer Tracking & Attendence
                 </h5>
                 <p className="card-text desc_of_topCategories">
@@ -79,13 +78,13 @@ function LandingPage() {
               </div>
             </div>
           </div>
-          <div className="col col_top_categories">
+          <div className="col col-lg-3 col-md-6 col-sm-4 col_top_categories">
             <div className="card mx-auto card_topCategories">
               <div className="card-body">
                 <div className="icon-wrapper">
                   <i className="fa-solid fa-calendar-days"></i>
                 </div>
-                <h5 className="card-title card_title_topCategories">
+                <h5 className="card-title card_title_topCategories fw-bold py-2">
                   Easy Scheduling & Attendance Tracking
                 </h5>
                 <p className="card-text desc_of_topCategories">
@@ -94,13 +93,13 @@ function LandingPage() {
               </div>
             </div>
           </div>
-          <div className="col col_top_categories">
+          <div className="col col-lg-3 col-md-6 col-sm-4 col_top_categories">
             <div className="card mx-auto card_topCategories">
               <div className="card-body">
                 <div className="icon-wrapper">
                   <i className="fa-solid fa-people-group"></i>
                 </div>
-                <h5 className="card-title card_title_topCategories">
+                <h5 className="card-title card_title_topCategories fw-bold py-2">
                   Customer Tracking & Attendence
                 </h5>
                 <p className="card-text desc_of_topCategories">
@@ -110,13 +109,13 @@ function LandingPage() {
               </div>
             </div>
           </div>
-          <div className="col col_top_categories">
+          <div className="col col-lg-3 col-md-6 col-sm-4 col_top_categories">
             <div className="card mx-auto card_topCategories">
               <div className="card-body">
                 <div className="icon-wrapper">
                   <i className="fa-solid fa-calendar-days"></i>
                 </div>
-                <h5 className="card-title card_title_topCategories">
+                <h5 className="card-title card_title_topCategories fw-bold py-2">
                   Easy Scheduling & Attendance Tracking
                 </h5>
                 <p className="card-text desc_of_topCategories">
@@ -133,30 +132,18 @@ function LandingPage() {
 
       <div className="container text-center sz_ctn">
         <div className="what_SZ">
-          <h2 className="What_is_StudyZone_section"></h2>
+          <h1 className="What_is_StudyZone_section"></h1>
         </div>
         <div className="about_us_sz">
-          <p className="what_sz_about mb-4">
+          <p className="what_sz_about mb-4 fs-5">
             SZ is a platform that allows educators to create online classes
             whereby they can store the course materials online; manage
             assignments, quizzes and exams; monitor due dates; grade results and
             provide students with feedback all in one place.
           </p>
         </div>
-        <div className="row">
-          <div className="col instructor_img">
-            <img
-              src="Images/instructorr.jpg"
-              className="aboutUs_img"
-              alt="..."
-            />
-            <h5 className="instructor_text">FOR INSTRUCTORS</h5>
-          </div>
-          <div className="col instructor_img">
-            <img src="Images/student.png" className="aboutUs_img" alt="..." />
-            <h5 className="instructor_text">For STUDENTS</h5>
-          </div>
-        </div>
+        <img src={certification} alt="Certification" width="40%"/>
+        <img src={courseapp} alt="Certification" width="40%"/>
       </div>
       {/* what is studyZone */}
 
@@ -164,21 +151,19 @@ function LandingPage() {
 
       <div className="container text-center our_success_container">
         <div className="container what_SZ ">
-          <h2 className="our_success"></h2>
+          <h1 className="our_success"></h1>
         </div>
         <div className="about_us_sz">
-          <p className="what_sz_about">
-            Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae
-            sollicitudin at nec nam et pharetra gravida. Adipiscing a quis
-            ultrices eu ornare tristique vel nisl orci.
+          <p className="what_sz_about fs-5">
+          These are just a few of the countless success stories that have blossomed on StudyZone. We take pride in being a catalyst for transformative learning experiences, enabling individuals to chase their dreams and achieve their aspirations.
           </p>
         </div>
       </div>
       <div className="num_of_succses">
         {success.map((success, id) => (
           <div key={id} className="text-center mx-3">
-            <h1>{success.num}</h1>
-            <p>{success.desc}</p>
+            <h1 className="">{success.num}</h1>
+            <p className="fs-4 fw-bold">{success.desc}</p>
           </div>
         ))}
       </div>

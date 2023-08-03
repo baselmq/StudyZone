@@ -1,8 +1,8 @@
 // import React from "react";
 import "../style/addUsers.css"
 import React, { useState } from 'react';
-import { Dialog } from 'primereact/dialog';
-import { InputText } from 'primereact/inputtext';
+// import { Dialog } from 'primereact/dialog';
+// import { InputText } from 'primereact/inputtext';
 
 
 // const FileUploadComponent = () => {

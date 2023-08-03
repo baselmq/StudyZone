@@ -34,7 +34,7 @@ Card.defaultProps = {
   id: 0,
   
   width: "250px",
-  height: "480px",
+  height: "560px",
   imgLink: "../Images/logo-black.png",
   title: "Course Title",
   desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque soluta",
