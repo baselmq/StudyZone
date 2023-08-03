@@ -1,0 +1,73 @@
+.AddUser {
+    font-size: 13px;
+}
+
+.AddUser_container {
+    width: 50rem;
+    background-color: var(--background-payment-color);
+    padding: 15px 20px 15px 20px;
+    border-radius: 3px;
+}
+
+.User_form {
+    display: flex;
+}
+
+.AddUser_75 {
+    padding: 20px 0px 20px 0px;
+}
+
+.AddUser_50 {
+    flex: 50%;
+}
+
+.AddUser_50 label {
+    padding-top: 0.8rem;
+}
+
+.AddUser_row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.AddUser_input[type=text] {
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#birthday {
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+
+
+
+.container_image {
+    position: relative;
+  }
+  
+  .container_image img {
+    border: 2px solid #a303a0;
+  }
+  .icon_upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    background-color: #e3e3e3;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+  }

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "primereact": "^9.6.1",
+    "react-datepicker": "^4.16.0"
+  }
+}
