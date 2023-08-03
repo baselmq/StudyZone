@@ -1,7 +1,7 @@
 import React from "react";
-import Sidebar from "../admin-component/Sidebar";
-import Header from "../admin-component/Header";
-import TableAdmin from "../admin-component/Table";
+import Sidebar from "../components/Sidebar";
+import Header from "../components/Header";
+import TableAdmin from "../components/Table";
 const Lessons = () => {
   return (
     <>

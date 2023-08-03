@@ -1,25 +1,25 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
-import "../Styles/App.css";
+import "./client/Styles/App.css";
 
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import { Outlet } from "react-router-dom";
-import Courses from "../Pages/Courses";
-import CourseDetails from "../Pages/CourseDetails";
-import Login from "../Pages/Login";
-import Register from "../Pages/Register";
-import LandingPage from "./LandingPage";
+import Courses from "./client/Pages/Courses";
+import CourseDetails from "./client/Pages/CourseDetails";
+import Login from "./client/Pages/Login";
+import Register from "./client/Pages/Register";
+import LandingPage from "./client/Pages/LandingPage";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import Nav from "../Components/Nav";
-import Footer from "../Components/Footer";
-import ForgotPasswordInput from "../Components/ForgetPasswordInput";
-import ResetPasswordInput from "../Components/ResetPasswordInput";
-import Cart from "./Cart";
-import Payment from "./Payment";
-import PageLayout from "../admin-component/PageLayout";
-import UsersAdmin from "../admin-pages/Users";
-import CoursesAdmin from "../admin-pages/Courses";
-import LessonsAdmin from "../admin-pages/Lessons";
+import Nav from "./client/Components/Nav";
+import Footer from "./client/Components/Footer";
+import ForgotPasswordInput from "./client/Components/ForgetPasswordInput";
+import ResetPasswordInput from "./client/Components/ResetPasswordInput";
+import Cart from "./client/Pages/Cart";
+import Payment from "./client/Pages/Payment";
+import PageLayout from "./admin/components/PageLayout";
+import UsersAdmin from "./admin/pages/Users";
+import CoursesAdmin from "./admin/pages/Courses";
+import LessonsAdmin from "./admin/pages/Lessons";
 
 const AppLayout = () => (
   <>

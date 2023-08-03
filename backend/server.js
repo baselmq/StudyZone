@@ -3,7 +3,8 @@ const express = require("express");
 const connectDB = require("./config/db");
 const errorHandler = require("./middleware/error");
 const auth = require("./routes/auth");
-const cart = require('./routes/cartRoutes');
+const cart = require("./routes/cartRoutes");
+const userRoutes = require("./routes/userRoutes");
 
 // const cors = require("cors");
 // Connect DB
@@ -18,7 +19,7 @@ app.use("/api/auth", auth);
 app.use("/api/private", require("./routes/private"));
 // app.use("/api/admin/login", loginRoutes);
 // app.use("/api/admin/courses", courseRoutes);
-// app.use("/api/admin/users", userRoutes);
+app.use("/api/admin/users", userRoutes);
 
 app.use("/api/cart", cart);
 

@@ -344,7 +344,7 @@ padding: 0;
 .login_column_img, .reset_column_img, .forget_column_img{
     width: 55%;
     height: 100vh;
-    background-image: url('../../public/Images/login-bk.png');
+    background-image: url('../../../public/Images/login-bk.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -352,7 +352,7 @@ padding: 0;
 .registration_column_img{
   width: 55%;
   height: 100vh;
-  background-image: url('../../public/Images/regist-bk.png');
+  background-image: url('../../../public/Images/regist-bk.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -728,7 +728,7 @@ padding:0 10px;
   padding: 6em 0;
   border-radius: 0 0 10em 10em;
   text-align: center;
-  background-image: url("../../public/Images/girl_landing_page.png");
+  background-image: url("../../../public/Images/girl_landing_page.png");
   background-repeat: no-repeat;
   background-position: right;
   height: 500px;
