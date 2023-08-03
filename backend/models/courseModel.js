@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
@@ -69,13 +69,13 @@ courseSchema.statics.addCourse = async function (
     !description ||
     !image
   ) {
-    throw Error("All fields must be filled");
+    throw Error('All fields must be filled');
   }
 
   const exist = await this.findOne({ courseName });
 
   if (exist) {
-    throw Error("Course Name Already in use");
+    throw Error('Course Name Already in use');
   }
 
   const course = await this.create({
@@ -92,4 +92,4 @@ courseSchema.statics.addCourse = async function (
   return course;
 };
 
-module.exports = mongoose.model("Course", courseSchema);
+module.exports = mongoose.model('Course', courseSchema);

@@ -1,17 +1,21 @@
-const express = require("express");
-const userController = require("../controllers/userController");
+const express = require('express');
+const userController = require('../controllers/userController');
 
 const router = express.Router();
 
-router
-  .route("/")
-  .get(userController.getAllUsers)
-  .post(userController.createUser);
+// ----------------- login route -----------------
+router.post('/login', userController.loginUser);
 
-router
-  .route("/:id")
-  .get(userController.getUser)
-  .patch(userController.updateUser)
-  .delete(userController.deleteUser);
+// ----------------- signup route -----------------
+router.post('/register', userController.signupUser);
+
+// ----------------- forgot password route -----------------
+router.post('/forgot-password', userController.forgotPassword);
+
+// ----------------- reset password route -----------------
+router.put('/reset-password/:resetToken', userController.resetPassword);
+
+// ----------------- cart route -----------------
+// router.post('/cart', userController.cart);
 
 module.exports = router;

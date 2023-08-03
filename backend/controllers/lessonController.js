@@ -1,61 +1,91 @@
-// controllers/lessonController.js
-const Lesson = require('../models/lessonModel');
+const Lesson = require("../models/lessonModel");
 
-
-exports.createLesson = async (req, res) => {
-  try {
-    const lesson = await Lesson.create(req.body);
-    res.status(201).json(lesson);
-  } catch (err) {
-    res.status(400).json({ message: err.message });
-  }
-};
-
-
+// getAllLessons
 exports.getAllLessons = async (req, res) => {
   try {
     const lessons = await Lesson.find();
-    res.json(lessons);
-  } catch (err) {
-    res.status(500).json({ message: err.message });
+    res.status(200).json({
+      status: "success",
+      results: lessons.length,
+      data: {
+        lessons,
+      },
+    });
+  } catch (error) {
+    res.status(404).json({
+      status: "fail",
+      message: error,
+    });
   }
 };
 
+//createLessons
+exports.createLessons = async (req, res) => {
+  const { course_id, lesson_title, video_url } = req.body;
 
-exports.getLessonById = async (req, res) => {
+  try {
+    const lesson = await Lesson.addCourse(course_id, lesson_title, video_url);
+    res.status(200).json({
+      status: "success",
+      data: {
+        lesson,
+      },
+    });
+  } catch (error) {
+    res.status(400).json({ status: "fail", error: error.message });
+  }
+};
+
+// getLesson
+exports.getLesson = async (req, res) => {
   try {
     const lesson = await Lesson.findById(req.params.id);
-    if (!lesson) {
-      return res.status(404).json({ message: 'Lesson not found' });
-    }
-    res.json(lesson);
-  } catch (err) {
-    res.status(500).json({ message: err.message });
+    res.status(200).json({
+      status: "success",
+      data: {
+        lesson,
+      },
+    });
+  } catch (error) {
+    res.status(404).json({
+      status: "fail",
+      message: error,
+    });
   }
 };
 
-
+// updateLesson
 exports.updateLesson = async (req, res) => {
   try {
-    const lesson = await Lesson.findByIdAndUpdate(req.params.id, req.body, { new: true });
-    if (!lesson) {
-      return res.status(404).json({ message: 'Lesson not found' });
-    }
-    res.json(lesson);
-  } catch (err) {
-    res.status(400).json({ message: err.message });
+    const lesson = await Lesson.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+      runValidators: true,
+    });
+    res.status(200).json({
+      status: "success",
+      data: {
+        lesson,
+      },
+    });
+  } catch (error) {
+    res.status(404).json({
+      status: "fail",
+      message: error,
+    });
   }
 };
-
-
+// deleteLesson
 exports.deleteLesson = async (req, res) => {
   try {
-    const lesson = await Lesson.findByIdAndDelete(req.params.id);
-    if (!lesson) {
-      return res.status(404).json({ message: 'Lesson not found' });
-    }
-    res.json({ message: 'Lesson deleted successfully' });
-  } catch (err) {
-    res.status(500).json({ message: err.message });
+    await Lesson.findByIdAndDelete(req.params.id);
+    res.status(200).json({
+      status: "success",
+      data: null,
+    });
+  } catch (error) {
+    res.status(404).json({
+      status: "fail",
+      message: error,
+    });
   }
 };

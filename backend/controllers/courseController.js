@@ -1,9 +1,4 @@
 const Course = require("../models/courseModel");
-const jwt = require("jsonwebtoken");
-
-const createToken = (_id) => {
-  return jwt.sign({ _id }, process.env.SECRET, { expiresIn: "3d" });
-};
 
 // getAllUsers
 exports.getAllCourses = async (req, res) => {
@@ -48,9 +43,6 @@ exports.createCourse = async (req, res) => {
       description,
       image
     );
-
-    // create token
-
     res.status(200).json({
       status: "success",
       data: {

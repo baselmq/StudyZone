@@ -1,11 +1,13 @@
-const User = require("../models/User");
+const User = require("../models/userModel");
 const jwt = require("jsonwebtoken");
+const crypto = require("crypto");
+const sendEmail = require("../utils/sendEmail");
 
 const createToken = (_id) => {
-  return jwt.sign({ _id }, process.env.SECRET, { expiresIn: "3d" });
+  return jwt.sign({ _id }, process.env.JWT_SECRET, { expiresIn: "3d" });
 };
 
-//login
+// ----------------- login -----------------
 exports.loginUser = async (req, res) => {
   const { email, password } = req.body;
 
@@ -15,96 +17,95 @@ exports.loginUser = async (req, res) => {
     // create token
     const token = createToken(user._id);
 
-    res.status(200).json({ status: "success", email, token });
+    res
+      .status(200)
+      .json({ status: "success", username: user.username, email, token });
   } catch (error) {
     res.status(400).json({ status: "fail", error: error.message });
   }
 };
-// getAllUsers
-exports.getAllUsers = async (req, res) => {
-  try {
-    const users = await User.find();
-    res.status(200).json({
-      status: "success",
-      results: users.length,
-      data: {
-        users,
-      },
-    });
-  } catch (error) {
-    res.status(404).json({
-      status: "fail",
-      message: error,
-    });
-  }
-};
 
-//createUser
-exports.createUser = async (req, res) => {
-  const { username, email, password, role } = req.body;
+// ----------------- register -----------------
+exports.signupUser = async (req, res) => {
+  const { username, email, password } = req.body;
 
   try {
-    const user = await User.addUser(username, email, password, role);
+    const user = await User.addUser(username, email, password);
 
     // create token
     const token = createToken(user._id);
 
-    res.status(200).json({ status: "success", user, token });
+    res.status(200).json({
+      status: "success",
+      data: {
+        user,
+      },
+      token,
+    });
   } catch (error) {
     res.status(400).json({ status: "fail", error: error.message });
   }
 };
 
-// getUser
-exports.getUser = async (req, res) => {
+// ----------------- Forgot Password -----------------
+exports.forgotPassword = async (req, res, next) => {
+  const { email } = req.body;
   try {
-    const user = await User.findById(req.params.id);
-    res.status(200).json({
-      status: "success",
-      data: {
-        user,
-      },
-    });
+    const user = await User.forgot(email);
+
+    const resetToken = user.getResetPasswordToken();
+    await user.save();
+
+    //The link which will be sent by email
+    const resetUrl = `http://localhost:3000/passwordreset/${resetToken}`;
+    const message = `<h1>You have requested a password reset</h1>
+                     <p>Please go to this link to reset your password</p>
+                     <a href=${resetUrl} clicktracking=off> ${resetUrl}</a>`;
+
+    try {
+      await sendEmail({
+        to: user.email,
+        subject: "Password Reset Request",
+        text: message,
+      });
+      res.status(200).json({ success: true, data: "Email Sent" });
+    } catch (error) {
+      user.resetPasswordToken = undefined;
+      user.resetPasswordExpire = undefined;
+
+      await user.save();
+      res.status(400).json({ status: "fail", error: error.message });
+    }
   } catch (error) {
-    res.status(404).json({
-      status: "fail",
-      message: error,
-    });
+    next(error);
   }
 };
 
-// updateUser
-exports.updateUser = async (req, res) => {
+// ----------------- reset password route -----------------
+exports.resetPassword = async (req, res, next) => {
+  const resetPasswordToken = crypto
+    .createHash("sha256")
+    .update(req.params.resetToken)
+    .digest("hex");
+
   try {
-    const user = await User.findByIdAndUpdate(req.params.id, req.body, {
-      new: true,
-      runValidators: true,
+    const user = await User.findOne({
+      resetPasswordToken,
+      resetPasswordExpire: { $gt: Date.now() },
     });
-    res.status(200).json({
-      status: "success",
-      data: {
-        user,
-      },
+    if (!user) {
+      return next(new ErrorResponse("Invalid Reset Token", 400));
+    }
+    user.password = req.body.password;
+    user.resetPasswordToken = undefined;
+    user.resetPasswordExpire = undefined;
+    await user.save();
+
+    res.status(201).json({
+      success: true,
+      data: "Password Reset Success",
     });
   } catch (error) {
-    res.status(404).json({
-      status: "fail",
-      message: error,
-    });
-  }
-};
-// deleteUser
-exports.deleteUser = async (req, res) => {
-  try {
-    await User.findByIdAndDelete(req.params.id);
-    res.status(200).json({
-      status: "success",
-      data: null,
-    });
-  } catch (error) {
-    res.status(404).json({
-      status: "fail",
-      message: error,
-    });
+    res.status(400).json({ status: "fail", error: error.message });
   }
 };

@@ -1,6 +1,9 @@
 // models/Lesson.js
-const mongoose = require('mongoose');
-const lessonSchema = new mongoose.Schema({
+const mongoose = require("mongoose");
+
+const Schema = mongoose.Schema;
+
+const lessonSchema = new Schema({
   course_id: {
     type: String,
     required: true,
@@ -11,7 +14,6 @@ const lessonSchema = new mongoose.Schema({
   },
   duration: {
     type: String,
-    required: true,
   },
   video_url: {
     type: String,
@@ -19,5 +21,23 @@ const lessonSchema = new mongoose.Schema({
   },
 });
 
-const Lesson = mongoose.model('Lesson', lessonSchema);
-module.exports = Lesson;
+lessonSchema.statics.addCourse = async function (
+  course_id,
+  lesson_title,
+  video_url
+) {
+  //validation
+  if (!course_id || !lesson_title || !video_url) {
+    throw Error("All fields must be filled");
+  }
+
+  const lesson = await this.create({
+    course_id,
+    lesson_title,
+    video_url,
+  });
+
+  return lesson;
+};
+
+module.exports = mongoose.model("Lesson", lessonSchema);
