@@ -20,6 +20,9 @@ import PageLayout from "./admin/components/PageLayout";
 import UsersAdmin from "./admin/pages/Users";
 import CoursesAdmin from "./admin/pages/Courses";
 import LessonsAdmin from "./admin/pages/Lessons";
+import AddUsers from "./admin/pages/AddUsers";
+import AddCourses from "./admin/pages/AddCourses";
+import AddLessons from "./admin/pages/AddLessons";
 
 const AppLayout = () => (
   <>
@@ -37,6 +40,7 @@ function App() {
 
       <BrowserRouter>
         <Routes>
+          {/*client Routes  */}
           <Route element={<AppLayout />}>
             <Route path="/" Component={LandingPage}></Route>
             <Route path="/courses" Component={Courses}></Route>
@@ -46,10 +50,6 @@ function App() {
             <Route path="/payment" Component={Payment}></Route>
           </Route>
 
-          <Route path="/admin" Component={PageLayout}></Route>
-          <Route path="/admin/users" Component={UsersAdmin}></Route>
-          <Route path="/admin/courses" Component={CoursesAdmin}></Route>
-          <Route path="/admin/lessons" Component={LessonsAdmin}></Route>
           <Route path="/cart" Component={Cart}></Route>
           <Route path="/payment" Component={Payment}></Route>
           <Route path="/login" Component={Login}></Route>
@@ -59,6 +59,15 @@ function App() {
             path="/passwordreset/:resetToken"
             element={<ResetPasswordInput />}
           />
+
+          {/*admin Routes  */}
+          <Route path="/admin" Component={PageLayout}></Route>
+          <Route path="/admin/users" Component={UsersAdmin}></Route>
+          <Route path="/admin/courses" Component={CoursesAdmin}></Route>
+          <Route path="/admin/lessons" Component={LessonsAdmin}></Route>
+          <Route path="/admin/add-users" Component={AddUsers}></Route>
+          <Route path="/admin/add-courses" Component={AddCourses}></Route>
+          <Route path="/admin/add-lessons" Component={AddLessons}></Route>
         </Routes>
       </BrowserRouter>
     </>
