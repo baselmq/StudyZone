@@ -116,7 +116,7 @@ const CourseBeforePayment = ({course}) => {
           sessionStorage.setItem("coursePayed",true)
      window.location.reload();
         }else{
-          navigate('/login')
+          navigate('/payment')
         }
         }}>Buy Now</button>
       <hr />
