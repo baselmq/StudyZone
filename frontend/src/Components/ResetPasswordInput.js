@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 
-import "../Styles/ResetPassword.css";
-
 const ResetPasswordScreen = () => {
   let { resetToken } = useParams();
   const [password, setPassword] = useState("");
