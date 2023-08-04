@@ -16,6 +16,7 @@ import ForgotPasswordInput from "./client/Components/ForgetPasswordInput";
 import ResetPasswordInput from "./client/Components/ResetPasswordInput";
 import Cart from "./client/Pages/Cart";
 import Payment from "./client/Pages/Payment";
+import PaymentSuccess from "./client/Pages/PaymentSuccess";
 import PageLayout from "./admin/components/PageLayout";
 import UsersAdmin from "./admin/pages/Users";
 import CoursesAdmin from "./admin/pages/Courses";
@@ -47,11 +48,11 @@ function App() {
             <Route path="/category/:category" Component={Courses}></Route>
             <Route path="/courses/:courseId" Component={CourseDetails}></Route>
             <Route path="/cart" Component={Cart}></Route>
-            <Route path="/payment" Component={Payment}></Route>
           </Route>
 
           <Route path="/cart" Component={Cart}></Route>
           <Route path="/payment" Component={Payment}></Route>
+          <Route path="/paymentSuccess" Component={PaymentSuccess}></Route>
           <Route path="/login" Component={Login}></Route>
           <Route path="/register" Component={Register}></Route>
           <Route path="/forgotpassword" element={<ForgotPasswordInput />} />
