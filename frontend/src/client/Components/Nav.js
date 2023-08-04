@@ -1,12 +1,34 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavButton from "./NavButton";
 import NavIcons from "./navIcons";
 import NavSearch from "./navSearch";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useCookies } from "react-cookie";
+import axios from "axios";
 const Nav = () => {
   let [burgerMenu, setBurgerMenu] = useState(true);
   let login = localStorage.getItem("login");
+  const [cookie, setCookie] = useCookies("access_token");
+
+  const fetchData = async () => {
+    try {
+      const response = await axios.post(
+        "http://localhost:8000/api/user/token",
+        {
+          token: cookie.access_token,
+        }
+      );
+      const data = await response.data;
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   window.addEventListener("resize", () => {
     let navbarText = document.querySelector(".navbar__text");
     let navbarButton = document.querySelector(".navbar__button");

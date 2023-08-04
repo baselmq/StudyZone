@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-
+import { useCookies } from "react-cookie";
 const LoginInput = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [cookie, setCookie] = useCookies("access_token");
 
   const navigate = useNavigate();
 
@@ -25,11 +26,12 @@ const LoginInput = () => {
 
     try {
       const { data } = await axios.post(
-        "/api/auth/login",
+        "http://localhost:8000/api/user/login",
         { email, password },
         config
       );
-      localStorage.setItem("authToken", data.token);
+      // localStorage.setItem("authToken", data.token);
+      setCookie("access_token", data.token);
       // localStorage.setItem("username", username);
       localStorage.setItem("login", true);
 
@@ -116,5 +118,3 @@ const LoginInput = () => {
 };
 
 export default LoginInput;
-
-

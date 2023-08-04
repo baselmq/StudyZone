@@ -39,7 +39,7 @@ const RegisterInput = () => {
     }
     try {
       const { data } = await axios.post(
-        "/api/auth/register",
+        "http://localhost:8000/api/user/register",
         { username, email, password },
         config
       );

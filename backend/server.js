@@ -16,7 +16,6 @@ app.use(cors());
 //Routes
 app.use("/api/user", userRoutes);
 app.use("/api/admin", adminRoutes);
-
 //port
 const PORT = process.env.PORT || 8080;
 

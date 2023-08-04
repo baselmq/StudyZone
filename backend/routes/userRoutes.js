@@ -17,5 +17,7 @@ router.put('/reset-password/:resetToken', userController.resetPassword);
 
 // ----------------- cart route -----------------
 // router.post('/cart', userController.cart);
+// ----------------- signup route -----------------
+router.post('/token', userController.token);
 
 module.exports = router;

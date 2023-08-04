@@ -109,3 +109,20 @@ exports.resetPassword = async (req, res, next) => {
     res.status(400).json({ status: "fail", error: error.message });
   }
 };
+
+// ----------------- login -----------------
+exports.token = async (req, res) => {
+  const { token } = req.body;
+
+  try {
+    const decodedToken = jwt.decode(token, process.env.JWT_SECRET);
+    const user = await User.findById(decodedToken._id);
+
+    // create token
+    // const token = createToken(user._id);
+
+    res.status(200).json({ status: "success", user });
+  } catch (error) {
+    res.status(400).json({ status: "fail", error: error.message });
+  }
+};

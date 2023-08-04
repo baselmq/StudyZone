@@ -19,7 +19,7 @@ const userSchema = new Schema(
     password: {
       type: String,
       required: true,
-      // select: false,
+      select: false,
     },
     role: {
       type: String,
@@ -38,7 +38,7 @@ userSchema.statics.login = async function (email, password, isAdmin = false) {
     throw Error("All fields must be filled");
   }
 
-  const user = await this.findOne({ email });
+  const user = await this.findOne({ email }).select("+password");
 
   if (!user) {
     throw Error("Incorrect email or password");

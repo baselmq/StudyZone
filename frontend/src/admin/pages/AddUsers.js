@@ -1,9 +1,8 @@
 // import React from "react";
-import "../style/addUsers.css"
-import React, { useState } from 'react';
-import { Dialog } from 'primereact/dialog';
-import { InputText } from 'primereact/inputtext';
-
+import "../style/addUsers.css";
+import React, { useState } from "react";
+// import { Dialog } from 'primereact/dialog';
+// import { InputText } from 'primereact/inputtext';
 
 // const FileUploadComponent = () => {
 //   const [selectedFile, setSelectedFile] = useState(null);
@@ -13,7 +12,7 @@ import { InputText } from 'primereact/inputtext';
 //     setSelectedFile(file);
 //   }};
 const AddUsers = () => {
-  const [image, setimage] = useState("")
+  const [image, setimage] = useState("");
 
   return (
     <div className="AddUser">
@@ -22,7 +21,6 @@ const AddUsers = () => {
           <div className="container AddUser_container">
             <form action="/">
               <div className="User_form">
-
                 <div className="row AddUser_row">
                   {/* <div className="profile_img">
                     <div className="">
@@ -66,8 +64,7 @@ const AddUsers = () => {
                       name="email"
                       placeholder=""
                     />
-                    <label htmlFor="adr"> Address
-                    </label>
+                    <label htmlFor="adr"> Address</label>
                     <input
                       className="AddUser_input"
                       type="text"
@@ -103,7 +100,11 @@ const AddUsers = () => {
                   </div>
                 </div>
               </div>
-              <input type="submit" value="Continue to checkout" className="btn pay_btn" />
+              <input
+                type="submit"
+                value="Continue to checkout"
+                className="btn pay_btn"
+              />
             </form>
           </div>
         </div>
