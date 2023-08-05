@@ -48,7 +48,7 @@ const Sidebar = () => {
               </Link>
             </li>
             <li>
-              <Link to="#">
+              <Link to="/login">
                 <span className="las la-sign-out-alt"></span>{" "}
                 <span>Logout</span>
               </Link>

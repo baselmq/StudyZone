@@ -750,7 +750,8 @@ margin-top: 34px;
  .input-groups input[type="password"],
  .input-groups input[type="email"],
  .input-groups input[type="number"],
-.input-groups input[type="month"] {
+.input-groups input[type="month"],
+select {
   width: 100%;
   margin: 0 auto;
   padding: 15px 25px;
@@ -762,7 +763,8 @@ margin-top: 34px;
 .input-groups input[type="password"]:focus,
  .input-groups input[type="email"]:focus,
  .input-groups input[type="number"]:focus,
- .input-groups input[type="month"]:focus {
+ .input-groups input[type="month"]:focus,
+ select:focus {
   border: 2px solid #49bbbd;
   outline: none;
 }
@@ -783,4 +785,9 @@ margin-top: 34px;
   width: 100%;
   justify-content: center;
   grid-column: 1 / span 2;
+}
+
+.col-span{
+  grid-column: 1 / span 2;
+  width: 96%;
 }

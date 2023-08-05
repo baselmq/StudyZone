@@ -26,6 +26,7 @@ import AddUsers from "./admin/pages/AddUsers";
 import AddCourses from "./admin/pages/AddCourses";
 import AddLessons from "./admin/pages/AddLessons";
 import { CoursesContextProvider } from "./admin/context/CoursesCxt";
+import LessonInfo from "./admin/pages/LessonInfo";
 
 
 const AppLayout = () => (
@@ -73,6 +74,8 @@ function App() {
           <Route path="/admin/add-users" Component={AddUsers}></Route>
           <Route path="/admin/add-courses" Component={AddCourses}></Route>
           <Route path="/admin/add-lessons" Component={AddLessons}></Route>
+          <Route path="/admin/lesson-info" Component={LessonInfo}></Route>
+
         </Routes>
       </BrowserRouter>
     </>

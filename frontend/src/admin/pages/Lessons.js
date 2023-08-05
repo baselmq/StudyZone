@@ -5,6 +5,7 @@ import React from "react";
 import Sidebar from "../components/Sidebar";
 import Header from "../components/Header";
 import TableAdmin from "../components/Table";
+import { Link } from "react-router-dom";
 
 const Courses = () => {
   // let history = useHistory();
@@ -49,14 +50,16 @@ ratings: 4.5},
 
       <Sidebar />
       <div className="main-content">
-        <Header title={"Courses"} />
+        <Header title={"Lessons"} />
 
         <div className="admin-container-main">
           <div className="header-main">
           <h4 className="main-txt-header">All Lessons</h4>
-          <button className="btn-login" type="submit">
-              New Lessons +
-            </button>
+
+            <Link to="/admin/add-lessons" className="btn-login">
+            New Lessons +
+              </Link>
+
           </div>
         <TableAdmin columns={columns} data={data}  
          onViewClick={handleViewClick}
