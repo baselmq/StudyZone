@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "../components/Sidebar";
 import Header from "../components/Header";
 import TableAdmin from "../components/Table";
+import { Link } from "react-router-dom";
 
 const Courses = () => {
 
@@ -50,9 +51,12 @@ const Courses = () => {
         <div className="admin-container-main">
           <div className="header-main">
           <h4 className="main-txt-header">All Courses</h4>
-          <button className="btn-login" type="submit">
-              New Course +
-            </button>
+    
+
+            <Link to="/admin/add-courses" className="btn-login">
+            New Course +
+              </Link>
+
           </div>
         <TableAdmin columns={columns} data={data}  
          onViewClick={handleViewClick}

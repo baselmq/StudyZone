@@ -368,22 +368,22 @@ body {
   text-transform: uppercase;
 }
 
-.login-form .column .input-groups {
+.input-groups {
   width: 65%;
   margin: 20px auto 0 auto;
 }
 
-.login-form .column .input-groups label {
+.input-groups label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
 
-.login-form .column .input-groups input[type="text"],
-.login-form .column .input-groups input[type="password"],
-.login-form .column .input-groups input[type="email"],
-.login-form .column .input-groups input[type="number"],
-.login-form .column .input-groups input[type="month"] {
+ .input-groups input[type="text"],
+ .input-groups input[type="password"],
+ .input-groups input[type="email"],
+ .input-groups input[type="number"],
+ .input-groups input[type="month"] {
   width: 100%;
   margin: 0 auto;
   padding: 15px 25px;
@@ -391,11 +391,11 @@ body {
   border: 1px solid #ccc;
 }
 
-.login-form .column .input-groups input[type="text"]:focus,
-.login-form .column .input-groups input[type="password"]:focus,
-.login-form .column .input-groups input[type="email"]:focus,
-.login-form .column .input-groups input[type="number"]:focus,
-.login-form .column .input-groups input[type="month"]:focus {
+.input-groups input[type="text"]:focus,
+ .input-groups input[type="password"]:focus,
+.input-groups input[type="email"]:focus,
+ .input-groups input[type="number"]:focus,
+ .input-groups input[type="month"]:focus {
   border: 2px solid #49bbbd;
   outline: none;
 }
@@ -443,11 +443,11 @@ body {
   cursor: pointer;
 }
 
-.login-form .column .input-groups .checkbox label {
+ .input-groups .checkbox label {
   margin-left: 5px;
 }
 
-.login-form .column .input-groups .btn-login,
+.input-groups .btn-login,
 .btn-reset,
 .btn-forget,
 .paymentSuccess-btn {
@@ -464,17 +464,17 @@ a {
   text-decoration: none;
 }
 
-.login-form .column .input-groups .btn-login:hover,
+.input-groups .btn-login:hover,
 .paymentSuccess-btn:hover {
   background-color: #b9d2ec;
 }
 
-.login-form .column .input-groups .forgot-password {
+.input-groups .forgot-password {
   display: block;
   margin-top: 10px;
 }
 
-.login-form .column .input-groups .signup-link {
+ .input-groups .signup-link {
   margin-top: 20px;
   text-align: center;
 }
