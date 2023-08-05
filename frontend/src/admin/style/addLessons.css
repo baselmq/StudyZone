@@ -1,0 +1,34 @@
+.AddLessons {
+    background-color: var(--background-payment-color);
+    font-size: 13px;
+    font-weight: 400;
+}
+.AddLessons_container {
+    width: 50rem;
+    padding: 15px 20px 15px 20px;
+    border-radius: 3px;
+}
+.AddLessons_row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+.AddLessons_input {
+    height: 3rem;
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.AddLessons_btn {
+    background-color: #49bbbd;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 29%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+}

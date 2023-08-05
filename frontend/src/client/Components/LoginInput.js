@@ -32,6 +32,7 @@ const LoginInput = () => {
       );
       // localStorage.setItem("authToken", data.token);
       setCookie("access_token", data.token);
+      console.log(data.token)
       // localStorage.setItem("username", username);
       localStorage.setItem("login", true);
 

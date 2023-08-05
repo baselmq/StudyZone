@@ -1,8 +1,7 @@
 // import React from "react";
 import "../style/addUsers.css";
 import React, { useState } from "react";
-// import { Dialog } from 'primereact/dialog';
-// import { InputText } from 'primereact/inputtext';
+import { InputText } from 'primereact/inputtext';
 
 // const FileUploadComponent = () => {
 //   const [selectedFile, setSelectedFile] = useState(null);
@@ -22,7 +21,7 @@ const AddUsers = () => {
             <form action="/">
               <div className="User_form">
                 <div className="row AddUser_row">
-                  {/* <div className="profile_img">
+                  <div className="profile_img">
                     <div className="">
                       <img
                         style={{
@@ -46,7 +45,7 @@ const AddUsers = () => {
                           }
                         }} />
                     </div>
-                  </div> */}
+                  </div>
                   <div className="col-25 AddUser_50">
                     <label htmlFor="fname">First Name</label>
                     <input
