@@ -39,10 +39,14 @@ const AddLessons = () => {
           <div className="input-groups">
           <label>Course</label>
           <select id="cars" name="cars">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="fiat">Fiat</option>
-  <option value="audi">Audi</option>
+  <option value="1">Digital Marketing Strategies</option>
+  <option value="2">UI/UX Design Fundamentals</option>
+  <option value="3">Mobile App Development with Flutter</option>
+  <option value="4">Data Science and Machine Learning</option>
+  <option value="5">Project Management Fundamentals</option>
+  <option value="6">Business Communication Skills</option>
+
+
 </select>
           </div>
           <div className="input-groups">

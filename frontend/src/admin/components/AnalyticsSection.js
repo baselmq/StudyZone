@@ -24,7 +24,7 @@ const AnalyticsSection = () => {
 
           <div className="analytic-info">
             <h4> Courses </h4>
-              <h1>20 </h1>
+              <h1>7 </h1>
         </div>
       </div>
 
@@ -36,7 +36,7 @@ const AnalyticsSection = () => {
 
         <div className="analytic-info">
           <h4> Lessons</h4>
-            <h1>120</h1>
+            <h1>20</h1>
       </div>
     </div>
 
@@ -47,7 +47,7 @@ const AnalyticsSection = () => {
 
       <div className="analytic-info">
         <h4> Students </h4>
-          <h1>1.3K </h1>
+          <h1>16 </h1>
     </div>
   </div>
 
