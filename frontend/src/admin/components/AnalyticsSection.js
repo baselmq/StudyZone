@@ -7,46 +7,47 @@ const AnalyticsSection = () => {
       <div className="analytics">
         <div className="analytic">
             <div className="analytic-icon">
-                <span className="las la-eye"></span>
+                <span className="las la-users"></span>
+           
             </div>
 
             <div className="analytic-info">
-              <h4> Total Views </h4>
-                <h1>10.3M</h1>
+              <h4> Total Users </h4>
+                <h1>17</h1>
           </div>
         </div>
 
         <div className="analytic">
           <div className="analytic-icon">
-              <span className="las la-clock"></span>
+              <span className="las la-laptop-code"></span>
           </div>
 
           <div className="analytic-info">
-            <h4> Watch Time (hrs)</h4>
-              <h1>20.9K <small className="text-danger"> 5%</small></h1>
+            <h4> Courses </h4>
+              <h1>20 </h1>
         </div>
       </div>
 
 
       <div className="analytic">
         <div className="analytic-icon">
-            <span className="las la-users"></span>
+            <span className="las la-book-reader"></span>
         </div>
 
         <div className="analytic-info">
-          <h4> Subscribers</h4>
-            <h1>1.3K <small className="text-success"> 12%</small></h1>
+          <h4> Lessons</h4>
+            <h1>120</h1>
       </div>
     </div>
 
     <div className="analytic">
       <div className="analytic-icon">
-          <span className="las la-heart"></span>
+          <span className="las la-user-graduate"></span>
       </div>
 
       <div className="analytic-info">
-        <h4> Total like</h4>
-          <h1>4.3m </h1>
+        <h4> Students </h4>
+          <h1>1.3K </h1>
     </div>
   </div>
 

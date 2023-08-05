@@ -16,13 +16,15 @@ import ForgotPasswordInput from "./client/Components/ForgetPasswordInput";
 import ResetPasswordInput from "./client/Components/ResetPasswordInput";
 import Cart from "./client/Pages/Cart";
 import Payment from "./client/Pages/Payment";
-import PageLayout from "./admin/components/PageLayout";
+import PageLayout from "./admin/pages/PageLayout";
 import UsersAdmin from "./admin/pages/Users";
 import CoursesAdmin from "./admin/pages/Courses";
+import CourseInfo from "./admin/pages/CourseInfo";
 import LessonsAdmin from "./admin/pages/Lessons";
 import AddUsers from "./admin/pages/AddUsers";
 import AddCourses from "./admin/pages/AddCourses";
 import AddLessons from "./admin/pages/AddLessons";
+
 
 const AppLayout = () => (
   <>
@@ -64,6 +66,7 @@ function App() {
           <Route path="/admin" Component={PageLayout}></Route>
           <Route path="/admin/users" Component={UsersAdmin}></Route>
           <Route path="/admin/courses" Component={CoursesAdmin}></Route>
+          <Route path="/admin/courses-info" Component={CourseInfo}></Route>
           <Route path="/admin/lessons" Component={LessonsAdmin}></Route>
           <Route path="/admin/add-users" Component={AddUsers}></Route>
           <Route path="/admin/add-courses" Component={AddCourses}></Route>

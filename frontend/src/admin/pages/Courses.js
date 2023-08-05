@@ -14,7 +14,9 @@ const Courses = () => {
       <Sidebar />
       <div class="main-content">
         <Header title={"Courses"} />
+        <main>
         <TableAdmin />
+        </main>
       </div>
     </>
   );

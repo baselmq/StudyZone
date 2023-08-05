@@ -5,7 +5,7 @@ import BlockGridSection from "./BlockGridSection";
 const MainContent = () => {
   return (
     <div class="main-content">
-      <Header title={"Analytics"} />
+      <Header title={"Dashboard"} />
       <main>
         <AnalyticsSection />
         {/* <BlockGridSection /> */}

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700&display=swap');
 
 :root{
-  --color-main:#396aff;
+  --color-main:#49bbbd;
   --bg2:#dce5ff;
   --bg:#fbfefd;
   --main-accent:#e9eefd;
@@ -37,8 +37,13 @@ display: none;
 }
 
 .admin-img {
-  width: 100%;
+  width: 90%;
   height: auto;
+  padding: 7px;
+}
+
+.avartar-text{
+  font-size: 19px;
 }
 
 .sidebar{
@@ -91,7 +96,15 @@ display: none;
   margin-left: .5rem;
 
 }
-
+.brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  color: var(--color-main);
+}
 .sidebar-avartar{
 display: grid;
 grid-template-columns: 70px auto;
@@ -293,6 +306,20 @@ font-size: .8rem;
 
 .text-main{
   color:var(--color-main) ;
+}
+.chart-container{
+  display: flex;
+  background: #49bbbd;
+  height: 60vh;
+  gap: 10px;
+}
+.chart-one , .chart-two{
+  width: 50%;
+  background: #fbfefd;
+  padding: 50px;
+}
+.analytic-icon span{
+  font-size: 20px;
 }
 .analytic:first-child .analytic-icon{
   background: #dce5ff;
