@@ -321,7 +321,7 @@ font-size: .8rem;
 }
 .chart-container{
   display: flex;
-  background: #49bbbd;
+
   height: 60vh;
   gap: 10px;
 }
@@ -770,12 +770,19 @@ select {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 769px) {
   .grid-input{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     }
+    .chart-container{
+      flex-direction: column;
+      align-items: center;
+    }
 
+    .chart-one, .chart-two {
+      width: 90%;
+    }
 }
 
 .btnContainer{
@@ -790,4 +797,10 @@ select {
 .col-span{
   grid-column: 1 / span 2;
   width: 96%;
+}
+
+.header-chart{
+  color: #5d6868;
+  border-bottom: 1px solid;
+  padding: 10px 0;
 }

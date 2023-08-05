@@ -5,6 +5,8 @@ import Header from "../components/Header";
 import AnalyticsSection  from "../components/AnalyticsSection";
 import Table from "../components/Table";
 import "../style/admin.css";
+import Chart1 from "../components/Chart";
+import ChartComponent from "../components/ChartCourse";
 
 const PageLayout = () => {
   return (
@@ -24,13 +26,16 @@ const PageLayout = () => {
         <AnalyticsSection />
         <div class="chart-container">
           <div class="chart-one">
-          <h1>Chart1</h1>
+            <h4 className="header-chart">Users Registration</h4>
+          <Chart1/>
           </div>
           <div class="chart-two">
-          <h1>Chart2</h1>
-
+          <h4 className="header-chart">Courses Sales</h4>
+          <ChartComponent/>
 </div>
           </div>
+
+          
         </main>
       </div>
 
