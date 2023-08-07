@@ -4,11 +4,7 @@ import Sidebar from "../components/Sidebar";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
 
-const AddCourses = () => {
-
- 
-
-
+const LessonInfo = () => {
 
   return (
     <>
@@ -19,20 +15,20 @@ const AddCourses = () => {
 
       <Sidebar />
       <div className="main-content">
-        <Header title={"Courses"} />
+        <Header title={"Lessons"} />
 
         <div className="admin-container-main">
           <div className="header-main">
-          <h4 className="main-txt-header">Add Course</h4>
+          <h4 className="main-txt-header"> Lesson Info</h4>
 
-            <Link to="/admin/courses" className="btn-login">
-            All Course <i class="las la-list"></i> 
+            <Link to="/admin/lessons" className="btn-login">
+            All Lessons <i class="las la-list"></i> 
               </Link>
 
           </div>
         <div className="grid-input">
         <div className="input-groups">
-        <label>Course Title</label>
+        <label>Lesson Title</label>
                <input
                   className="AddCourses_input"
                 type="text"
@@ -43,7 +39,16 @@ const AddCourses = () => {
 
           </div>
           <div className="input-groups">
-          <label>Courses Price</label>
+          <label>Course</label>
+          <select id="cars" name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+          </div>
+          <div className="input-groups">
+          <label>Time</label>
                   <input
                     className="AddCourses_input"
                     type="number"
@@ -51,33 +56,8 @@ const AddCourses = () => {
                   />
           </div>
           <div className="input-groups">
-          <label>Language</label>
+          <label>Url Video</label>
                   <input
-                    className="AddCourses_input"
-                    type="text"
-                    placeholder=""
-                  />
-          </div>
-          <div className="input-groups">
-          <label>Time</label>
-                  <input
-                    className="AddCourses_input"
-                    type="text"
-                    placeholder=""
-                  />
-          </div>
-          <div className="input-groups">
-          <label>What you will learn</label>
-                  <input
-                    className="AddCourses_input"
-                    type="text"
-                    placeholder=""
-                  />
-          </div>
-          <div className="input-groups">
-       
-          <label>Description</label>
-          <input
                     className="AddCourses_input"
                     type="text"
                     placeholder=""
@@ -89,7 +69,7 @@ const AddCourses = () => {
             </button>
           
 
-            <Link to="/admin/courses" className="btn-cancel">
+            <Link to="/admin/lessons" className="btn-cancel">
             Cancel
               </Link>
 
@@ -104,4 +84,4 @@ const AddCourses = () => {
   );
 };
 
-export default AddCourses;
+export default LessonInfo;;

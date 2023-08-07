@@ -1,36 +1,35 @@
 import React from "react";
 
-const TableAdmin = () => {
+const TableAdmin = ({ columns, data, onViewClick, onEditClick, onDeleteClick}) => {
   return (
-    <table className="table table-striped">
-      <thead>
+<>
+
+<div class="table-wrapper">
+    <table class="fl-table">
+    <thead>
         <tr>
-          <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">email</th>
+          {columns.map((column, index) => (
+            <th key={index}>{column}</th>
+          ))}
+          <th></th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td colSpan="2">Larry the Bird</td>
-          <td>@twitter</td>
-        </tr>
+        {data.map((row, rowIndex) => (
+          <tr key={rowIndex}>
+            {columns.map((column, colIndex) => (
+              <td key={colIndex}>{row[column]}</td>
+            ))}
+            <td>
+              <button className="btnView" onClick={() => onViewClick(row)}><i class="las la-eye"></i></button>
+            </td>
+          </tr>
+        ))}
       </tbody>
+   
     </table>
+</div>
+</>
   );
 };
 

@@ -4,7 +4,7 @@ import Sidebar from "../components/Sidebar";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
 
-const AddCourses = () => {
+const CourseInfo = () => {
 
  
 
@@ -23,7 +23,7 @@ const AddCourses = () => {
 
         <div className="admin-container-main">
           <div className="header-main">
-          <h4 className="main-txt-header">Add Course</h4>
+          <h4 className="main-txt-header">Course Info</h4>
 
             <Link to="/admin/courses" className="btn-login">
             All Course <i class="las la-list"></i> 
@@ -85,7 +85,7 @@ const AddCourses = () => {
           </div>
         <div className="btnContainer">
         <button className="btn-login" type="submit">
-              Add
+              Save
             </button>
           
 
@@ -104,4 +104,4 @@ const AddCourses = () => {
   );
 };
 
-export default AddCourses;
+export default CourseInfo;

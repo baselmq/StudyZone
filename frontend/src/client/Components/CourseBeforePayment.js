@@ -1,7 +1,10 @@
 import React from "react";
 import Rating from "@mui/material/Rating";
 import { useNavigate } from "react-router";
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8553f7426dba1d7157c16549f5726d28525c6108
 const CourseBeforePayment = ({ course }) => {
   let navigate = useNavigate();
   return (
@@ -92,8 +95,13 @@ const CourseBeforePayment = ({ course }) => {
                 </div>
               </div>
               <div>
+<<<<<<< HEAD
                 className, launched less than a year ago by Blackboard
                 co-founder Michael Chasen, integrates exclusively...
+=======
+                Class, launched less than a year ago by Blackboard co-founder
+                Michael Chasen, integrates exclusively...
+>>>>>>> 8553f7426dba1d7157c16549f5726d28525c6108
               </div>
               <hr />
             </div>
@@ -121,8 +129,13 @@ const CourseBeforePayment = ({ course }) => {
                 </div>
               </div>
               <div>
+<<<<<<< HEAD
                 className, launched less than a year ago by Blackboard
                 co-founder Michael Chasen, integrates exclusively...
+=======
+                Class, launched less than a year ago by Blackboard co-founder
+                Michael Chasen, integrates exclusively...
+>>>>>>> 8553f7426dba1d7157c16549f5726d28525c6108
               </div>
               <hr />
             </div>
@@ -150,8 +163,13 @@ const CourseBeforePayment = ({ course }) => {
                 </div>
               </div>
               <div>
+<<<<<<< HEAD
                 className, launched less than a year ago by Blackboard
                 co-founder Michael Chasen, integrates exclusively...
+=======
+                Class, launched less than a year ago by Blackboard co-founder
+                Michael Chasen, integrates exclusively...
+>>>>>>> 8553f7426dba1d7157c16549f5726d28525c6108
               </div>
             </div>
           </div>
@@ -177,7 +195,11 @@ const CourseBeforePayment = ({ course }) => {
                 sessionStorage.setItem("coursePayed", true);
                 window.location.reload();
               } else {
+<<<<<<< HEAD
                 navigate("/payment");
+=======
+                navigate("/cart");
+>>>>>>> 8553f7426dba1d7157c16549f5726d28525c6108
               }
             }}
           >

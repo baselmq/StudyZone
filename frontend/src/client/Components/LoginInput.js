@@ -23,10 +23,24 @@ const LoginInput = () => {
   const loginHandler = async (e) => {
     e.preventDefault();
 
+<<<<<<< HEAD
     const email = e.target.email.value;
     const password = e.target.password.value;
     console.log(email)
     await login(email, password);
+=======
+    try {
+      const { data } = await axios.post(
+        "http://localhost:8000/api/user/login",
+        { email, password },
+        config
+      );
+      // localStorage.setItem("authToken", data.token);
+      setCookie("access_token", data.token);
+      console.log(data.token)
+      // localStorage.setItem("username", username);
+      localStorage.setItem("login", true);
+>>>>>>> 8553f7426dba1d7157c16549f5726d28525c6108
 
     // const config = {
     //   header: {
