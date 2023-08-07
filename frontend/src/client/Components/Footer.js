@@ -47,7 +47,7 @@ const Footer = () => {
           </section>
         </div>
 
-        <div className="text-center ">© 2023 Class Technologies Inc.</div>
+        <div className="text-center ">© 2023 className Technologies Inc.</div>
       </footer>
       {/* /footer */}
     </div>

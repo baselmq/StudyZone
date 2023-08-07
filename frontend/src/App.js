@@ -23,6 +23,8 @@ import LessonsAdmin from "./admin/pages/Lessons";
 import AddUsers from "./admin/pages/AddUsers";
 import AddCourses from "./admin/pages/AddCourses";
 import AddLessons from "./admin/pages/AddLessons";
+import { useContext } from "react";
+import { AuthCxt } from "./client/context/AuthContext";
 
 const AppLayout = () => (
   <>
@@ -33,6 +35,8 @@ const AppLayout = () => (
 );
 
 function App() {
+  const { data, loading } = useContext(AuthCxt);
+  console.log(data);
   return (
     <>
       {/*Admin Dashboard*/}
@@ -41,7 +45,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           {/*client Routes  */}
-          <Route element={<AppLayout />}>
+          <Route element={loading ? <div>Loading...</div> : <AppLayout />}>
             <Route path="/" Component={LandingPage}></Route>
             <Route path="/courses" Component={Courses}></Route>
             <Route path="/category/:category" Component={Courses}></Route>

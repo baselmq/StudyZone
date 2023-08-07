@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Cart = () => {
   return (
     <>
-      <h1 id="Title" class="pt-5 fw-bold">
+      <h1 id="Title" className="pt-5 fw-bold">
         Shopping Cart
       </h1>
       <div

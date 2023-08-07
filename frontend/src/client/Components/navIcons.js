@@ -5,8 +5,18 @@ import { Link } from "react-router-dom";
 import imageUser from "../assets/images/bkLogin.png";
 import ImageUser from "./navbar/ImageUser";
 import "../Components/navbar/navbar.css";
-function NavIcons() {
-  let username = localStorage.getItem("username");
+import DropdownMenu from "./navbar/DropdownMenu";
+import { PathIcons } from "../util/PathIcons";
+import { useCookies } from "react-cookie";
+
+function NavIcons({ data }) {
+  const [cookie, setCookie] = useCookies("access_token");
+
+  const SignOut = () => {
+    localStorage.removeItem("login");
+    setCookie("access_token", "");
+  };
+
   return (
     <>
       <div className="navbar__text">
@@ -32,7 +42,7 @@ function NavIcons() {
         </a>
 
         <a href="#" className="nav_profile ">
-          <span>{username} </span>
+          <span>{data.username} </span>
         </a>
 
         <div className="dropdown">
@@ -46,6 +56,14 @@ function NavIcons() {
           </button>
           <ul className="dropdown-menu dropdown-menu-end custom-dropdown-menu pt-3">
             {/* ***----------------- DropdownMenu  -----------------*** */}
+            <DropdownMenu
+              text={"SignOut"}
+              to={"/"}
+              icon={PathIcons.signOut}
+              onPress={SignOut}
+            />
+
+            {/* <li onClick={SignOut}>SignOut</li> */}
           </ul>
         </div>
         {/* <Link to="/login" onClick={()=>{sessionStorage.setItem("username","")

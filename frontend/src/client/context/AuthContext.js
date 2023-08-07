@@ -1,6 +1,6 @@
 import { createContext, useEffect, useReducer } from "react";
 
-export const AuthContext = createContext();
+export const AuthCxt = createContext();
 
 const authReducer = (state, action) => {
    switch (action.type) {
@@ -31,8 +31,51 @@ export const AuthContextProvider = ({ children }) => {
    }, []);
    console.log("user state", state);
    return (
-      <AuthContext.Provider value={{ ...state, dispatch }}>
+      <AuthCxt.Provider value={{ ...state, dispatch }}>
          {children}
-      </AuthContext.Provider>
+      </AuthCxt.Provider>
    );
 };
+
+
+
+// import { createContext, useEffect, useState } from "react";
+// import { useCookies } from "react-cookie";
+// import axios from "axios";
+// export const AuthCxt = createContext();
+
+// export const AuthContextProvider = ({ children }) => {
+//   const [cookie, setCookie] = useCookies("access_token");
+//   const [data, setData] = useState("");
+//   const [loading, setLoading] = useState(true); // Add a loading state
+//   const fetchData = async () => {
+//     try {
+//       const response = await axios.post(
+//         "http://localhost:8000/api/user/token",
+//         {
+//           token: cookie.access_token,
+//         }
+//       );
+//       const data = await response.data;
+//       setData(data.user);
+//       setLoading(false); // Set loading to false after the data is fetched
+//     } catch (error) {
+//       console.log(error);
+//       setLoading(false); // Set loading to false in case of an error
+//     }
+//   };
+
+//   useEffect(() => {
+//     fetchData();
+//   }, [loading]);
+
+//   // Show loading while data is being fetched
+//   //   if (loading) {
+//   //     return <div>Loading...</div>;
+//   //   }
+
+//   // Once the data is available, render the children with the AuthCxt.Provider
+//   return (
+//     <AuthCxt.Provider value={{ data, loading }}>{children}</AuthCxt.Provider>
+//   );
+// };

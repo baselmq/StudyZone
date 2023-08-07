@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import CardSlider from "../Components/Card_Slider";
 import { Link } from "react-router-dom";
 import jumbotron from "../assets/images/jumbotron.png";
 import certification from "../assets/images/Certification-rafiki.png";
 import courseapp from "../assets/images/Course app.png";
+import { AuthCxt } from "../context/AuthContext";
 
 function LandingPage() {
   const success = [
@@ -13,29 +14,38 @@ function LandingPage() {
     { num: "26E", desc: "Chief experts" },
     { num: "16Y", desc: "Years of experience" },
   ];
+
   return (
     <>
       {/* backgroundImage&info */}
       <div className="jumbtron-container">
         <div id="first-col">
-          <h3 className="mb-4"><span className="fw-bold fs-1" id="online">Online</span> is now much easier</h3>
-          <h3 className="text-wrap mb-5">StudyZone is an interesting platform that will teach you in more an interactive way</h3>
+          <h3 className="mb-4">
+            <span className="fw-bold fs-1" id="online">
+              Online
+            </span>{" "}
+            is now much easier
+          </h3>
+          <h3 className="text-wrap mb-5">
+            StudyZone is an interesting platform that will teach you in more an
+            interactive way
+          </h3>
           <Link
-              to={"/login"}
-              className="btn btn-secondary fs-4"
-              id="btn_landing_page"
-              type="button"
-            >
-              Join for free
-            </Link>
+            to={"/login"}
+            className="btn btn-secondary fs-4"
+            id="btn_landing_page"
+            type="button"
+          >
+            Join for free
+          </Link>
         </div>
         <div id="second-col">
-          <img src={jumbotron} alt="jumbotron" width="100%"/>
+          <img src={jumbotron} alt="jumbotron" width="100%" />
         </div>
       </div>
       {/* /backgroundImage&info */}
       {/* A Broad Selection Of Courses. */}
-     
+
       <div className="broad_selection">
         <h1 className="color_broad_selection"> </h1>
         <span className="fs-4">
@@ -142,8 +152,8 @@ function LandingPage() {
             provide students with feedback all in one place.
           </p>
         </div>
-        <img src={certification} alt="Certification" width="40%"/>
-        <img src={courseapp} alt="Certification" width="40%"/>
+        <img src={certification} alt="Certification" width="40%" />
+        <img src={courseapp} alt="Certification" width="40%" />
       </div>
       {/* what is studyZone */}
 
@@ -155,7 +165,10 @@ function LandingPage() {
         </div>
         <div className="about_us_sz">
           <p className="what_sz_about fs-5">
-          These are just a few of the countless success stories that have blossomed on StudyZone. We take pride in being a catalyst for transformative learning experiences, enabling individuals to chase their dreams and achieve their aspirations.
+            These are just a few of the countless success stories that have
+            blossomed on StudyZone. We take pride in being a catalyst for
+            transformative learning experiences, enabling individuals to chase
+            their dreams and achieve their aspirations.
           </p>
         </div>
       </div>

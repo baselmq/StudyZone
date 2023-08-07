@@ -10,7 +10,7 @@ function NavCategory() {
         <a href="#">
           Category{" "}
           <svg
-            class="icon"
+            className="icon"
             width="14"
             height="16"
             xmlns="http://www.w3.org/2000/svg"

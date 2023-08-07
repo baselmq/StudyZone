@@ -1,47 +1,57 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useCookies } from "react-cookie";
+import { AuthCxt } from "../context/AuthContext";
+import useLogin from "../hooks/useLogin";
 const LoginInput = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
+  // const [error, setError] = useState("");
   const [cookie, setCookie] = useCookies("access_token");
+  const { loading } = useContext(AuthCxt);
+  const { login, isLoading, error } = useLogin();
 
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (localStorage.getItem("authtoken")) {
-      navigate("/");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (localStorage.getItem("authtoken")) {
+  //     navigate("/");
+  //   }
+  // }, []);
 
   const loginHandler = async (e) => {
     e.preventDefault();
-    const config = {
-      header: {
-        "Content-Type": "application/json",
-      },
-    };
 
-    try {
-      const { data } = await axios.post(
-        "http://localhost:8000/api/user/login",
-        { email, password },
-        config
-      );
-      // localStorage.setItem("authToken", data.token);
-      setCookie("access_token", data.token);
-      // localStorage.setItem("username", username);
-      localStorage.setItem("login", true);
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    console.log(email)
+    await login(email, password);
 
-      navigate("/");
-    } catch (error) {
-      setError(error.response.data.error);
-      setTimeout(() => {
-        setError("");
-      }, 5000);
-    }
+    // const config = {
+    //   header: {
+    //     "Content-Type": "application/json",
+    //   },
+    // };
+
+    // try {
+    //   const { data } = await axios.post(
+    //     "http://localhost:8000/api/user/login",
+    //     { email, password },
+    //     config
+    //   );
+    //   // localStorage.setItem("authToken", data.token);
+    //   setCookie("access_token", data.token);
+    //   // localStorage.setItem("username", username);
+    //   localStorage.setItem("login", true);
+    //   navigate("/");
+    //   // cookie !== "" ? navigate("/") : navigate("/login");
+    // } catch (error) {
+    //   setError(error.response.data.error);
+    //   setTimeout(() => {
+    //     setError("");
+    //   }, 5000);
+    // }
   };
 
   return (
@@ -60,8 +70,8 @@ const LoginInput = () => {
               name="email"
               placeholder="Enter your email"
               required=""
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              // value={email}
+              // onChange={(e) => setEmail(e.target.value)}
               tabIndex={1}
             />
           </div>
@@ -74,8 +84,8 @@ const LoginInput = () => {
               name="password"
               placeholder="Enter your Password"
               required=""
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              // value={password}
+              // onChange={(e) => setPassword(e.target.value)}
               tabIndex={2}
             />
           </div>
