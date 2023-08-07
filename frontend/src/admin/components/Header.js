@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = (props) => {
   return (
-    <header>
+    <header className="header-admin">
       <div class="header-title-wrapper">
         <label for="menu-toggle">
           <span class="las la-bars"></span>

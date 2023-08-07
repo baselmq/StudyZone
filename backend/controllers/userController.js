@@ -57,7 +57,7 @@ exports.forgotPassword = async (req, res, next) => {
     await user.save();
 
     //The link which will be sent by email
-    const resetUrl = `http://localhost:3000/passwordreset/${resetToken}`;
+    const resetUrl = `http://localhost:3000/reset-password/${resetToken}`;
     const message = `<h1>You have requested a password reset</h1>
                      <p>Please go to this link to reset your password</p>
                      <a href=${resetUrl} clicktracking=off> ${resetUrl}</a>`;
@@ -126,3 +126,7 @@ exports.token = async (req, res) => {
     res.status(400).json({ status: "fail", error: error.message });
   }
 };
+
+
+
+

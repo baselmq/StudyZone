@@ -1,0 +1,182 @@
+:root {
+  --yellow: #49bbbd;
+  --green: #49bbbd;
+  --dark-green: #13a1a3;
+  --black: #1a1a1a;
+  --gray-border: #f0eff2;
+  --white: #fff;
+  --red: #d93025;
+
+  /* progress bar */
+  --complete: #49bbbd;
+  --active: #49bbbd;
+  --mute: #e6e6e6;
+  --bg-complete: #d2e8e7;
+}
+
+/* --------------- body ---------------*/
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+  height: 100vh;
+  margin-top: -50px;
+}
+.auth-forgot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 100px;
+  margin-top: -50px;
+}
+.container-auth {
+  width: 100%;
+  max-width: 450px;
+  color: var(--black);
+}
+
+/* --------------- form --------------- */
+.form-auth {
+  align-items: start;
+}
+.field {
+  margin-bottom: 25px;
+}
+.input-container {
+  position: relative;
+  margin-top: 10px;
+}
+/* ---------- inputs ---------- */
+.form-auth input {
+  outline: none;
+  border: 2px solid var(--gray-border);
+  border-radius: 2px;
+  width: 100%;
+  padding: 10px 40px 10px 40px;
+}
+.form-auth input::placeholder {
+  font-size: 15px;
+}
+
+.form-auth input:focus {
+  border: 2px solid var(--green);
+}
+.invalid input {
+  border-color: var(--red);
+}
+.invalid input:focus {
+  border: 2px solid var(--red);
+}
+.error {
+  display: none;
+  margin-top: 6px;
+  color: var(--red);
+  font-size: 13px;
+}
+.invalid .error {
+  display: block;
+}
+.fetch-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: var(--red);
+  font-size: 15px;
+}
+/* ---------- eyeIcon ---------- */
+.auth-icon {
+  position: absolute;
+  height: 100%;
+  top: 16px;
+  left: 12px;
+  color: var(--green);
+}
+.eye-icon {
+  position: absolute;
+  display: block;
+  height: 100%;
+  top: 12.5px;
+  right: 15px;
+  color: var(--green);
+  font-size: 18px;
+  height: 0;
+}
+.eye-icon:hover {
+  cursor: pointer;
+}
+.invalid .auth-icon {
+  color: var(--red);
+}
+/* ---------- forget password ---------- */
+.forget-pass {
+  color: var(--green);
+  font-size: 14px;
+  margin-top: 15px;
+  transition-duration: 0.4s;
+  width: fit-content;
+  text-decoration: none;
+  border-bottom: 2px solid var(--green);
+}
+.forget-pass:hover {
+  color: var(--yellow);
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-bottom: 2px solid var(--yellow);
+}
+
+/* ---------- button ---------- */
+
+.btn-auth {
+  border: none;
+  outline: none;
+  width: 100%;
+  max-width: 450px;
+  padding: 10px;
+  margin-top: 25px;
+  color: var(--white);
+  background-color: var(--green);
+  border-radius: 2px;
+  transition-duration: 0.4s;
+}
+.btn-auth:hover {
+  background-color: var(--dark-green);
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+/* rest password */
+.login-rest {
+  text-align: center;
+  margin-top: 30px;
+}
+.login-rest a {
+  color: var(--green);
+  text-decoration: none;
+  border-bottom: 2px solid var(--green);
+}
+.login-rest a:hover {
+  color: var(--yellow);
+  border-bottom: 2px solid var(--yellow);
+}
+.new-auth {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.new-auth .new-auth-link {
+  color: var(--green);
+  text-decoration: none;
+}
+/* ---------- media ---------- */
+@media (max-width: 767px) {
+  .auth {
+    padding: 0 20px;
+  }
+  .auth-forgot {
+    padding: 100px 20px;
+  }
+}
+.login-link{
+  color: var(--green);
+}

@@ -1,0 +1,38 @@
+.btn-check-out {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  max-width: 350px;
+  padding: 10px;
+  margin-top: 25px;
+  color: var(--white);
+  background-color: var(--green);
+  border-radius: 2px;
+  transition-duration: 0.4s;
+}
+.btn-check-out:hover {
+  background-color: var(--dark-green);
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.hr-line {
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 20px;
+}
+.image-item img {
+  width: 120px;
+  height: 70px;
+  object-fit: cover;
+  object-position: 0;
+}
+.btn-remove {
+  text-decoration: none;
+  color: #ed4614;
+  cursor: pointer;
+}
+.btn-remove:hover {
+  text-decoration: none;
+  color: #ac3611;
+}

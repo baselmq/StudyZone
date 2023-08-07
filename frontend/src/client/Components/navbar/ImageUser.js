@@ -5,7 +5,7 @@ const ImageUser = ({
   width,
   classImage,
   image,
-  name,
+  name = "image",
   position = "0",
 }) => {
   let imageStyle = {

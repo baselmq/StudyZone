@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "~@flaticon/flaticon-uicons/css/all/all";
+@import "../components/navbar/navbar.css";
+@import "../components/slider/slider.css";
+@import "../components/navbar/searchBar.css";
+@import "./authentication.css";
+@import "./cart.css";
+
+:root {
+  --main-color: #49bbbd;
+  --second-color: #dbf1f2;
+  --third-color: #9dccff;
+  --main-font-color: #000000;
+  --white-font-color: #ffffff;
+  --second-font-color: #696984;
+  --navbar-color: #fdfdfd;
+  --background-payment-color: #f1f8f8;
+  --orange-color: #f48c06;
+  --darkblue-color: #2f327d;
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+.brand-section-text {
+  color: var(--main-color);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.brand-section-text span {
+  color: var(--darkblue-color);
+}
+.brand-section-sub-text {
+  font-weight: 400;
+  max-width: 65rem;
+  font-size: 21px;
+  line-height: 1.6;
+}
+.image-section-about {
+  width: 26rem;
+}
+.custom-success {
+  white-space: nowrap;
+  color: #2f327d;
+  background-color: #dbf1f2;
+  padding: 30px 0;
+  border-radius: 10px;
+}
+.custom-success p {
+  font-weight: 600;
+}
+.successPayment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.checkIcon {
+  align-items: center;
+  width: 15%;
+}
+.cart-page {
+  height: 50vh;
+}

@@ -224,7 +224,7 @@ text-decoration:none
   transition: margin-left 300ms;
 }
 
-header{
+.header-admin{
   display: flex;
   justify-content: space-between;
  padding-top: .5rem;
@@ -529,7 +529,7 @@ width: 100%;
 }
 
 @media  only screen and (max-width: 500px) {
-  header,.header-title-wrapper{
+  .header-admin,.header-title-wrapper{
     align-items: center;
   }
 .header-title h1{

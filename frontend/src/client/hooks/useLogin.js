@@ -1,47 +1,45 @@
+// useRegistration.js
 import { useState } from "react";
-import { useAuthContext } from "./useAuthContext";
+import axios from "axios";
+import { useCookies } from "react-cookie";
 
 const useLogin = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [isLoading, setIsLoading] = useState(null);
-  const { dispatch } = useAuthContext();
+  const [success, setSuccess] = useState(false);
+  const [cookie, setCookie] = useCookies("access_token");
 
-  const login = async (email, password) => {
-    setIsLoading(true);
-    setError(null);
+  const loginUser = async (email, password) => {
+    const data = {
+      email: email,
+      password: password,
+    };
 
-    const response = await fetch("http://localhost:8000/api/user/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ email, password }),
-    });
-
-    const json = await response.json();
-
-    if (!response.ok) {
-      setIsLoading(false);
-      setError(json.error);
-    }
-
-    if (response.ok) {
-      localStorage.setItem("user", JSON.stringify(json));
-      console.log(json)
-      dispatch({
-        type: "LOGIN",
-        payload: json,
-      });
-      setIsLoading(false);
+    try {
+      setIsLoading(true);
       setError(null);
+
+      // Send a POST request to the server with axios
+      const response = await axios.post(
+        "http://localhost:8000/api/user/login",
+        data
+      );
+
+      // Handle the success response
+      const token = response.data.token;
+      localStorage.setItem("login", "true");
+      setCookie("access_token", token, { path: "/" });
+      setSuccess(true);
+    } catch (error) {
+      // Handle the error response
+      //   console.log(error.response.data.error)
+      setError(error.response.data.error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
-  return {
-    login,
-    isLoading,
-    error,
-  };
+  return { isLoading, error, success, loginUser };
 };
 
 export default useLogin;
